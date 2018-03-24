@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/cedecf1" android:layout_width="280.0dip" android:layout_height="228.66998dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/cedecf1" android:layout_width="280.0dip" android:layout_height="228.66998dip">
+        <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/c7b7b7b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_20" android:layout_marginTop="@dimen/margin_30" android:text="@string/sleep_mode" />
+        <CheckBox android:id="@id/sleep_disable" android:background="@drawable/setting_line_ctrl_selector1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_12" android:layout_marginRight="@dimen/margin_38" android:button="@null" android:layout_alignParentRight="true" />
+        <SeekBar android:id="@id/sleep_seekbar" android:layout_width="230.66998dip" android:layout_height="wrap_content" android:maxHeight="2.669983dip" android:max="120" android:progressDrawable="@drawable/sleep_seekbar" android:thumb="@drawable/icon_thumb_sleep" android:layout_centerInParent="true" />
+        <TextView android:textSize="@dimen/text_size_20" android:textColor="@color/c7f7f7f" android:id="@id/sleep_seekbar_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_30" android:layout_marginBottom="@dimen/margin_12_" android:text="@string/fiio_music_0_text" android:layout_above="@id/sleep_seekbar" android:layout_alignParentRight="true" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_22" android:layout_marginRight="@dimen/margin_22" android:layout_below="@id/sleep_seekbar">
+            <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/c7b7b7b" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/min10" android:layout_weight="1.0" />
+            <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/c7b7b7b" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/min20" android:layout_weight="1.0" />
+            <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/c7b7b7b" android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/min30" android:layout_weight="1.0" />
+            <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/c7b7b7b" android:gravity="right" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/min60" android:layout_weight="1.0" />
+            <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/c7b7b7b" android:gravity="right" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/min90" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_30" android:layout_alignParentBottom="true">
+            <Button android:textSize="@dimen/text_size_15" android:textColor="@color/white" android:id="@id/sleep_cancle2" android:background="@drawable/button_background_grivity" android:layout_width="126.66998dip" android:layout_height="36.0dip" android:layout_marginLeft="@dimen/margin_15" android:text="@string/cancle" />
+            <Button android:textSize="@dimen/text_size_15" android:textColor="@color/white" android:id="@id/sleep_ok2" android:background="@drawable/button_background_blue" android:layout_width="126.66998dip" android:layout_height="36.0dip" android:layout_marginLeft="@dimen/margin_10" android:text="@string/ok" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

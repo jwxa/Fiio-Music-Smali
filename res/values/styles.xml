@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="btn_base_style">
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:background">@drawable/btn_common</item>
+        <item name="android:paddingLeft">20.0dip</item>
+        <item name="android:paddingTop">10.0dip</item>
+        <item name="android:paddingRight">20.0dip</item>
+        <item name="android:paddingBottom">10.0dip</item>
+    </style>
+    <style name="btn_style" parent="@style/btn_base_style">
+        <item name="android:layout_marginLeft">10.0dip</item>
+        <item name="android:layout_marginRight">10.0dip</item>
+    </style>
+    <style name="btn_style2">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:background">@drawable/btn_common2</item>
+        <item name="android:paddingLeft">20.0dip</item>
+        <item name="android:paddingTop">8.0dip</item>
+        <item name="android:paddingRight">20.0dip</item>
+        <item name="android:paddingBottom">8.0dip</item>
+    </style>
+    <style name="btn_dialog">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:background">@drawable/btn_dialog</item>
+        <item name="android:paddingLeft">25.0dip</item>
+        <item name="android:paddingTop">10.0dip</item>
+        <item name="android:paddingRight">25.0dip</item>
+        <item name="android:paddingBottom">10.0dip</item>
+        <item name="android:layout_marginLeft">3.0dip</item>
+        <item name="android:layout_marginRight">3.0dip</item>
+    </style>
+    <style name="popwindow_anim_style">
+        <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
+    </style>
+    <style name="t9_key">
+        <item name="android:paddingTop">3.0dip</item>
+        <item name="android:paddingBottom">3.0dip</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="t9_window_anim" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
+    </style>
+    <style name="TTNotificationText">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+    </style>
+    <style name="TTNotificationTitle">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+    </style>
+    <style name="lrc_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="SlidingMenu.TextView.ItemTitle" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@drawable/list_selector</item>
+        <item name="android:paddingLeft">15.0dip</item>
+        <item name="android:layout_height">50.0dip</item>
+        <item name="android:drawablePadding">15.0dip</item>
+    </style>
+    <style name="SlidingMenu.View.SplitLine" parent="@android:style/Widget">
+        <item name="android:background">@drawable/sliding_menu_line</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="SlidingMenu.TextView.Title" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="SlidingMenu.TextView.SubTitle" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">@color/dialog_text_hint</item>
+    </style>
+    <style name="menu_button_tab">
+        <item name="android:gravity">center</item>
+        <item name="android:background">#00000000</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="textAppearanceDialogWindowTitle">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="dialogWindowTitle">
+        <item name="android:textAppearance">@style/textAppearanceDialogWindowTitle</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:scrollHorizontally">true</item>
+    </style>
+    <style name="animationDialog">
+        <item name="android:windowEnterAnimation">@anim/dialog_enter</item>
+        <item name="android:windowExitAnimation">@anim/dialog_exit</item>
+    </style>
+    <style name="XfDialog">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleStyle">@style/dialogWindowTitle</item>
+        <item name="android:windowAnimationStyle">@style/animationDialog</item>
+        <item name="android:popupBackground">@color/translucence</item>
+        <item name="android:windowSoftInputMode">adjustPan</item>
+    </style>
+    <style name="AppBaseTheme" parent="@style/Anim_fade" />
+    <style name="AppBaseThemeFullscreen" parent="@style/Anim_fade_Fullscreen" />
+    <style name="Anim_fade" parent="@android:style/Theme.NoTitleBar">
+        <item name="android:windowAnimationStyle">@style/fade</item>
+    </style>
+    <style name="Anim_fade_Fullscreen" parent="@android:style/Theme.NoTitleBar.Fullscreen">
+        <item name="android:windowAnimationStyle">@style/fade</item>
+    </style>
+    <style name="fade" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/fade_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/fade_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/fade_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/fade_out</item>
+    </style>
+    <style name="AppTheme" parent="@style/AppBaseTheme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+    <style name="listview_style">
+        <item name="android:layout_marginTop">4.0dip</item>
+        <item name="android:cacheColorHint">@color/transparent</item>
+        <item name="android:divider">@null</item>
+        <item name="android:dividerHeight">0.5dip</item>
+    </style>
+    <style name="item_checkbox">
+        <item name="android:paddingLeft">12.0dip</item>
+        <item name="android:focusable">false</item>
+        <item name="android:clickable">false</item>
+        <item name="android:layout_width">40.0dip</item>
+        <item name="android:layout_height">40.0dip</item>
+        <item name="android:checked">false</item>
+        <item name="android:button">@null</item>
+        <item name="android:drawableLeft">@drawable/checkbox_selector</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <style name="item_checkbox1">
+        <item name="android:paddingLeft">12.0dip</item>
+        <item name="android:focusable">false</item>
+        <item name="android:clickable">false</item>
+        <item name="android:layout_width">40.0dip</item>
+        <item name="android:layout_height">40.0dip</item>
+        <item name="android:checked">false</item>
+        <item name="android:button">@null</item>
+        <item name="android:drawableLeft">@drawable/checkbox_selector1</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <style name="item_checkbox2">
+        <item name="android:paddingLeft">12.0dip</item>
+        <item name="android:focusable">false</item>
+        <item name="android:clickable">false</item>
+        <item name="android:layout_width">40.0dip</item>
+        <item name="android:layout_height">40.0dip</item>
+        <item name="android:checked">false</item>
+        <item name="android:button">@null</item>
+        <item name="android:drawableLeft">@drawable/checkbox_selector2</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <style name="item_checkbox3">
+        <item name="android:paddingLeft">12.0dip</item>
+        <item name="android:focusable">false</item>
+        <item name="android:clickable">false</item>
+        <item name="android:layout_width">40.0dip</item>
+        <item name="android:layout_height">40.0dip</item>
+        <item name="android:checked">false</item>
+        <item name="android:button">@null</item>
+        <item name="android:drawableLeft">@drawable/checkbox_selector3</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <style name="MyRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:maxHeight">15.0dip</item>
+        <item name="android:progressDrawable">@drawable/playview_ratingbar</item>
+        <item name="android:minHeight">15.0dip</item>
+    </style>
+    <style name="bottom_arrow_view">
+        <item name="android:clickable">true</item>
+        <item name="android:layout_width">45.0dip</item>
+        <item name="android:layout_height">45.0dip</item>
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <style name="popupWindowAnimation" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/popupwindow_enter</item>
+        <item name="android:windowExitAnimation">@anim/popupwindow_exit</item>
+    </style>
+    <style name="NotificationText">
+        <item name="android:textColor">?android:textColorPrimary</item>
+    </style>
+    <style name="NotificationTitle">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+    </style>
+    <style name="ViPERTheme" parent="@android:style/Theme.Holo.NoActionBar">
+        <item name="android:windowBackground">@mipmap/bgbig</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="LockScreenBase" parent="@style/AppBaseTheme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+    </style>
+    <style name="Theme_Dialog_From_Bottom" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@style/dialog_animation</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="dialog_animation" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
+    </style>
+</resources>

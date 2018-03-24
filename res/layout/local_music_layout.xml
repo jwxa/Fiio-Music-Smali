@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/rl_list_main_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentTop="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/topLayout" android:background="@color/color_bg_181f28" android:layout_width="fill_parent" android:layout_height="@dimen/top_heard_item_height" android:layout_alignParentTop="true">
+        <ImageView android:id="@id/local_music_list_file_view" android:background="@color/transparent" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/btn_first_menu_local_music_n" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/title_text_sp" android:textColor="@color/white" android:id="@id/topTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/local_music" android:layout_toRightOf="@id/local_music_list_file_view" android:layout_centerVertical="true" />
+        <ImageButton android:id="@id/searchBtn" android:background="@drawable/selector_music_btn" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/icon_search" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/text_size_13" android:textColor="@color/white" android:id="@id/check_all_textview" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/check_all_text" android:layout_toLeftOf="@id/check_all_item_checkbox" android:layout_centerVertical="true" />
+        <CheckBox android:id="@id/check_all_item_checkbox" android:padding="10.0dip" android:visibility="gone" android:layout_width="@dimen/back_button_size" android:layout_height="@dimen/back_button_size" android:layout_marginRight="4.0dip" android:button="@drawable/checkbox_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RadioGroup android:orientation="horizontal" android:id="@id/rg_tab" android:background="@drawable/menu_bg" android:layout_width="fill_parent" android:layout_height="@dimen/menu_radiogroup_button_height" android:layout_below="@id/topLayout">
+        <RadioButton android:id="@id/tab_rb_a" android:checked="true" android:drawableBottom="@drawable/btn_all_music_selector" style="@style/menu_button_tab" />
+        <RadioButton android:id="@id/tab_rb_b" android:drawableBottom="@drawable/btn_artist_selector" style="@style/menu_button_tab" />
+        <RadioButton android:id="@id/tab_rb_c" android:drawableBottom="@drawable/btn_album_selector" style="@style/menu_button_tab" />
+        <RadioButton android:id="@id/tab_rb_d" android:drawableBottom="@drawable/btn_style_selector" style="@style/menu_button_tab" />
+        <RadioButton android:id="@id/tab_rb_e" android:drawableBottom="@drawable/btn_file_selector" style="@style/menu_button_tab" />
+    </RadioGroup>
+    <include android:id="@id/song_not_found_tab" android:layout_width="fill_parent" android:layout_height="200.0dip" android:layout_above="@id/bottom_layout_fg" android:layout_below="@id/rg_tab" layout="@layout/nosong_layout" />
+    <LinearLayout android:orientation="vertical" android:id="@id/rl_list_content" android:background="@color/list_bg_222e3e" android:layout_width="fill_parent" android:layout_height="200.0dip" android:layout_above="@id/bottom_layout_fg" android:layout_below="@id/rg_tab">
+        <RelativeLayout android:id="@id/allsong_list_head_layout" android:layout_width="fill_parent" android:layout_height="@dimen/height_70">
+            <LinearLayout android:id="@id/changestate" android:background="@drawable/btn_backjgroudchange" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="80.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <ImageView android:id="@id/changesongandAlum" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerInside" android:onClick="onClick" />
+            </LinearLayout>
+            <ImageView android:id="@id/btn_displaychang_list" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_26" android:src="@drawable/btn_displaychange_playlist" android:scaleType="centerInside" android:layout_toLeftOf="@id/allsong_palyall" android:layout_centerVertical="true" android:onClick="onClick" />
+            <ImageView android:id="@id/iv_return_first_page" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_26" android:src="@drawable/return_first_page_selector" android:scaleType="centerInside" android:layout_toLeftOf="@id/allsong_palyall" android:layout_centerVertical="true" android:onClick="onClick" />
+            <ImageView android:id="@id/allsong_palyall" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_26" android:src="@drawable/allsong_palyall_selector" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:onClick="onClick" />
+            <CheckBox android:id="@id/allsong_mode" android:background="@drawable/btn_modeswitch_bg_n" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_38" android:button="@drawable/allsong_mode_selector" android:layout_toLeftOf="@id/allsong_palyall" android:layout_centerVertical="true" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/btn_displaychang_list" android:layout_centerVertical="true">
+                <TextView android:textSize="@dimen/text_size_medium" android:textColor="@color/textcolor_cc_80" android:id="@id/type_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_15" android:text="@string/ok" android:singleLine="true" />
+                <TextView android:textSize="@dimen/text_size_list_item" android:textColor="@color/textcolor_cc_15" android:id="@id/type_num" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_15" android:text="@string/ok" android:singleLine="true" />
+            </LinearLayout>
+            <View android:background="@drawable/list_line" android:layout_width="fill_parent" android:layout_height="1.3299866dip" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <Button android:gravity="left" android:id="@id/btn_list_random_music2" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/btn_list_random_music" style="@style/btn_style2" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <com.fiio.music.widget.SideBar android:id="@id/sidrbar" android:background="@drawable/btn_artrist_a_z" android:layout_width="@dimen/width_20" android:layout_height="fill_parent" android:layout_alignParentRight="true" />
+                <FrameLayout android:id="@id/tab_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toLeftOf="@id/sidrbar" />
+                <TextView android:textSize="@dimen/text_size_36" android:textStyle="bold" android:textColor="@color/textcolor_d3_80" android:gravity="center" android:id="@id/dialog" android:background="@drawable/icon_dialog_a_z_bg" android:visibility="invisible" android:layout_width="150.0px" android:layout_height="150.0px" android:layout_centerInParent="true" />
+                <ProgressBar android:id="@id/progressBar_local" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@id/dialog" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+            <ImageView android:layout_gravity="bottom|center|right" android:id="@id/configfragment_menu" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_20" android:layout_marginBottom="@dimen/margin_20" android:src="@drawable/btn_window_menu" />
+        </FrameLayout>
+    </LinearLayout>
+    <FrameLayout android:id="@id/bottom_layout_fg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <include android:id="@id/bottom_selector_view" android:visibility="gone" layout="@layout/bottom_selector" />
+        <include android:id="@id/bottom_layout_content" android:clickable="true" layout="@layout/bottom_layout" />
+    </FrameLayout>
+</RelativeLayout>

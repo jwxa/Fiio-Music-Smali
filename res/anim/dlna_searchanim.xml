@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="100" android:drawable="@drawable/icon_dlna_search1" />
+    <item android:duration="100" android:drawable="@drawable/icon_dlna_search2" />
+    <item android:duration="100" android:drawable="@drawable/icon_dlna_search3" />
+    <item android:duration="100" android:drawable="@drawable/icon_dlna_search4" />
+    <item android:duration="100" android:drawable="@drawable/icon_dlna_search5" />
+    <item android:duration="100" android:drawable="@drawable/icon_dlna_search6" />
+    <item android:duration="100" android:drawable="@drawable/icon_dlna_search7" />
+    <item android:duration="100" android:drawable="@drawable/icon_dlna_search8" />
+    <item android:duration="100" android:drawable="@drawable/icon_dlna_search9" />
+    <item android:duration="100" android:drawable="@drawable/icon_dlna_search10" />
+    <item android:duration="100" android:drawable="@drawable/icon_dlna_search11" />
+</animation-list>

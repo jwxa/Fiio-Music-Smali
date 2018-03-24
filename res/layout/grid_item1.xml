@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/gridview_item_selector" android:layout_width="fill_parent" android:layout_height="@dimen/button_list_layout_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/item_image" android:layout_width="fill_parent" android:layout_height="84.0dip" android:scaleType="centerInside" android:drawableTop="@drawable/btn_first_menu_play_list_selector" android:layout_centerHorizontal="true" />
+    <TextView android:id="@id/item_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/item_image" android:layout_centerHorizontal="true" />
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="player_mode">
+        <item>ลำดับการเล่น</item>
+        <item>เล่นแบบสุ่ม</item>
+        <item>เล่นซ้ำครั้งเดียว</item>
+        <item>เล่นซ้ำทั้งหมด</item>
+    </string-array>
+    <string-array name="list_tab_items">
+        <item>เพลงภายในเครื่อง</item>
+        <item>รายการเพลงบนเครือข่าย</item>
+        <item>ผู้จัดการการดาวน์โหลด</item>
+    </string-array>
+</resources>

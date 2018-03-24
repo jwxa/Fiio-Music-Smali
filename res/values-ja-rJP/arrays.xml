@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="player_mode">
+        <item>順次再生</item>
+        <item>シャッフル</item>
+        <item>1曲ループ</item>
+        <item>すべてをループ</item>
+    </string-array>
+    <string-array name="list_tab_items">
+        <item>ローカルドライブ</item>
+        <item>ネットワークライブラリ</item>
+        <item>ダウンロードマネージャ</item>
+    </string-array>
+</resources>

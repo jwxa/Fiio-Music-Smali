@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="#ff000000" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="55.0dip">
+        <ImageView android:id="@id/id_actionbar_back" android:layout_width="32.0dip" android:layout_height="32.0dip" android:src="@mipmap/back" android:layout_centerVertical="true" />
+        <CheckBox android:id="@id/id_actionbar_enable" android:background="@drawable/select_enable" android:layout_width="40.0dip" android:layout_height="55.0dip" android:layout_marginTop="17.5dip" android:layout_marginBottom="17.5dip" android:checked="false" android:button="@null" android:layout_alignParentRight="true" />
+        <Button android:id="@id/id_actionbar_resetting" android:background="@drawable/select_btn_resetting" android:visibility="gone" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginRight="26.0dip" android:layout_toLeftOf="@id/id_actionbar_enable" android:layout_centerVertical="true" />
+        <TextView android:textSize="20.0sp" android:textColor="@android:color/white" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:text="@string/viper_app" android:singleLine="true" android:layout_toLeftOf="@id/id_actionbar_resetting" android:layout_toRightOf="@id/id_actionbar_back" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/contentFrame" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center" android:background="@color/dialogBackground" android:layout_width="300.0dip" android:layout_height="200.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0sp" android:textColor="@color/textcolor_d3" android:background="@color/background_special" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_13" android:layout_marginTop="@dimen/margin_20" android:text="@string/the_resetdata_text" />
+    <TextView android:textSize="15.0sp" android:id="@id/maxVoice_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_75" android:text="@string/is_resetsql_real" android:layout_alignRight="@id/maxVoiceSeerBar_id" android:layout_centerHorizontal="true" />
+    <Button android:textSize="15.0sp" android:textColor="#ffcccccc" android:id="@id/max_voice_cancel_id" android:background="#ff566e8a" android:layout_width="127.0dip" android:layout_height="36.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="150.0dip" android:text="@string/cancle" />
+    <Button android:textSize="15.0sp" android:textColor="#ffcccccc" android:id="@id/max_voice_confirm_id" android:background="#ff566e8a" android:layout_width="127.0dip" android:layout_height="36.0dip" android:layout_marginLeft="160.0dip" android:layout_marginTop="150.0dip" android:text="@string/ok" />
+</RelativeLayout>

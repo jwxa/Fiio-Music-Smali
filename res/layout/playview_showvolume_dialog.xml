@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/icon_playview_volume_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_playview_volume_21" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/icon_playview_volume_minus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_playview_volume_1" android:layout_above="@id/icon_playview_volume_2" android:layout_centerHorizontal="true" />
+        <ImageView android:id="@id/icon_playview_volume_add" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_playview_volume_3" android:layout_below="@id/icon_playview_volume_2" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="@dimen/text_size_45" android:textColor="@color/white" android:id="@id/playview_volume" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fiio_music_0_text" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/playview_volume_mode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="247.0dip" android:src="@drawable/icon_playview_volume_mute" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="player_mode">
+        <item>Reproducción secuencial</item>
+        <item>Aleatorio</item>
+        <item>Repetir el primero</item>
+        <item>repetir todos</item>
+    </string-array>
+    <string-array name="list_tab_items">
+        <item>Lista de música local</item>
+        <item>Libreria en red</item>
+        <item>Asistente descargas</item>
+    </string-array>
+</resources>

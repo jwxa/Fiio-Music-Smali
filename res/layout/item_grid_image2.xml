@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="135.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/grid_list_image" android:layout_width="fill_parent" android:layout_height="81.0dip" android:src="@drawable/icon_playview_def_albumicon6" android:scaleType="centerCrop" android:adjustViewBounds="true" />
+    <com.fiio.music.widget.AlwaysMarqueeTextView android:textColor="@color/c303030" android:id="@id/top_text" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="4.0dip" android:layout_marginTop="4.0dip" android:lines="1" android:layout_below="@id/grid_list_image" />
+    <com.fiio.music.widget.AlwaysMarqueeTextView android:textSize="12.0dip" android:textColor="@color/text_color_7f7f7f" android:id="@id/bottom_text" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="4.0dip" android:lines="1" android:layout_below="@id/top_text" />
+    <ImageView android:id="@id/grid_curplay" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_alignParentTop="true" android:layout_alignStart="@id/grid_list_image" />
+    <CheckBox android:id="@id/checkBox_grid_image" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/checkbox_grid_list_image_selector" android:layout_alignBottom="@id/grid_list_image" android:layout_alignEnd="@id/grid_list_image" android:layout_alignParentEnd="true" />
+</RelativeLayout>

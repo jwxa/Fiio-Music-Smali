@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/bottomLayout" android:background="@color/color_bg_1b1b1b" android:layout_width="fill_parent" android:layout_height="@dimen/foot_play_layout_height" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:android_custom="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/ibtn_player_albumart" android:clickable="true" android:layout_width="@dimen/foot_play_icon_view_height" android:layout_height="@dimen/foot_play_icon_view_height" android:layout_marginLeft="10.0dip" android:src="@drawable/icon_playview_def_albumicon5" android:layout_centerVertical="true" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/play_ctrl_layout" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+        <ImageButton android:layout_gravity="center_vertical" android:id="@id/btn_bottom_playPrev2" android:background="@null" android:layout_width="@dimen/foot_play_icon_view_height" android:layout_height="@dimen/foot_play_icon_view_height" android:src="@drawable/s_prev_selector1" android:scaleType="fitCenter" />
+        <RelativeLayout android:layout_gravity="center_vertical" android:layout_width="@dimen/foot_play_icon_view_height" android:layout_height="@dimen/foot_play_icon_view_height">
+            <com.fiio.music.util.RoundProgressBar android:id="@id/rpb_player_progress" android:background="@drawable/btn_circleprogress_bg1" android:layout_width="@dimen/foot_play_icon_view_height" android:layout_height="@dimen/foot_play_icon_view_height" android_custom:roundColor="#00000000" android_custom:roundProgressColor="#ff2ae967" android_custom:roundWidth="1.0dip" android_custom:max="100" android_custom:textIsDisplayable="false" />
+            <FrameLayout android:id="@id/playLayout" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="9.5dip" android:layout_centerVertical="true">
+                <ImageButton android:id="@id/btn_pause2" android:background="@null" android:visibility="gone" android:layout_width="@dimen/foot_play_icon_view_height" android:layout_height="@dimen/foot_play_icon_view_height" android:src="@drawable/pause_selector1" android:scaleType="fitCenter" />
+                <ImageButton android:id="@id/ibtn_player_control" android:background="@drawable/play_selector1" android:layout_width="@dimen/foot_play_icon_view_height" android:layout_height="@dimen/foot_play_icon_view_height" android:scaleType="fitCenter" />
+            </FrameLayout>
+        </RelativeLayout>
+        <ImageButton android:layout_gravity="center_vertical" android:id="@id/btn_bottom_playNext2" android:background="@null" android:layout_width="@dimen/foot_play_icon_view_height" android:layout_height="@dimen/foot_play_icon_view_height" android:src="@drawable/s_next_selector1" android:scaleType="fitCenter" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:layout_toLeftOf="@id/play_ctrl_layout" android:layout_toRightOf="@id/ibtn_player_albumart" android:layout_centerVertical="true">
+        <com.fiio.music.widget.AlwaysMarqueeTextView android:textSize="16.0sp" android:textColor="@color/white" android:id="@id/tv_player_title" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bottom_bar_default_name" android:singleLine="true" />
+        <com.fiio.music.widget.AlwaysMarqueeTextView android:textSize="10.0sp" android:textColor="@color/text_color_7f7f7f" android:ellipsize="marquee" android:id="@id/artist_tv2" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bottom_bar_default_text" android:scrollHorizontally="true" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" />
+        <LinearLayout android:orientation="horizontal" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textColor="@color/white" android:id="@id/position_tv2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bottom_time_text" />
+            <TextView android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bottom_time_diliver_text" />
+            <TextView android:textColor="@color/white" android:id="@id/duration_tv2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bottom_time_text" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

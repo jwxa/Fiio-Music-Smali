@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="46.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:id="@id/drag_handle" android:background="@color/white" android:focusable="false" android:visibility="gone" android:clickable="true" android:layout_width="50.0dip" android:layout_height="46.0dip" />
+    <TextView android:textSize="13.0sp" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/item_name" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="45.0dip" android:singleLine="true" android:layout_toRightOf="@id/drag_handle" />
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/item_select" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="1.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

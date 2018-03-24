@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="#ff242424" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="42.0dip">
+        <ImageView android:id="@id/iv_searchlrc_back" android:background="@layout/img_btn_press" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_centerVertical="true" />
+        <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="center|left" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="30.0dip" android:text="@string/search_lrc_bar" android:singleLine="true" android:layout_toLeftOf="@id/id_actionbar_enable" android:layout_toRightOf="@id/id_actionbar_back" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:background="#ff1b1b1b" android:layout_width="fill_parent" android:layout_height="36.0dip" android:layout_marginLeft="16.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="16.0dip" android:weightSum="5.0">
+        <TextView android:textSize="13.299988sp" android:textColor="#ffffffff" android:gravity="center|right" android:layout_gravity="center_vertical" android:id="@id/tv_searchlrc_song_tittle" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/search_lrc_song_tittle" android:singleLine="true" android:layout_weight="1.0" />
+        <EditText android:textSize="12.0sp" android:textColor="#ff878787" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/ed_searchlrc_song_tittle" android:background="@null" android:layout_width="0.0dip" android:layout_height="fill_parent" android:singleLine="true" android:layout_weight="4.0" android:imeOptions="actionDone" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="36.0dip" android:layout_marginLeft="16.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="16.0dip">
+        <LinearLayout android:background="#ff1b1b1b" android:layout_width="214.0dip" android:layout_height="fill_parent" android:weightSum="4.0">
+            <TextView android:textSize="13.299988sp" android:textColor="#ffffffff" android:gravity="center|right" android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:text="@string/search_lrc_song_artist" android:singleLine="true" android:layout_weight="1.0" />
+            <EditText android:textSize="12.0sp" android:textColor="#ff878787" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/ed_searchlrc_song_artist" android:background="@null" android:layout_width="0.0dip" android:layout_height="fill_parent" android:singleLine="true" android:layout_weight="3.0" android:imeOptions="actionDone" />
+        </LinearLayout>
+        <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/tv_searchlrc_search" android:background="#ff1f65e9" android:layout_width="64.0dip" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:text="@string/search_lrc_search" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:id="@id/ll_pageNum" android:background="#ff000000" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="28.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_curPageNum" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_dividing_line" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_totalPageNum" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ProgressBar android:layout_gravity="center" android:id="@id/pb_searchlrc_bar" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="40.0dip" style="?android:attr/progressBarStyleLarge" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_searchlrc_findnothing" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/search_lrc_search_nothing" />
+        <com.fiio.music.network.widget.MySlideMoothViewpage android:layout_gravity="center" android:id="@id/vp_showlrc" android:background="#ff000000" android:visibility="gone" android:layout_width="288.0dip" android:layout_height="292.0dip" android:scaleType="centerCrop" />
+    </FrameLayout>
+</LinearLayout>

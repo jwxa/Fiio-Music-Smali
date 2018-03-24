@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@color/noticebar_color" android:layout_width="fill_parent" android:layout_height="100.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/notice_img" android:padding="3.0dip" android:layout_width="100.0dip" android:layout_height="wrap_content" android:src="@drawable/allsong_palyall_selector" android:scaleType="centerCrop" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentBottom="true" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/linearLayout1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/notice_exitbtn" android:layout_toRightOf="@id/notice_img">
+            <TextView android:textSize="16.0sp" android:textColor="@color/black" android:id="@id/notice_songname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="14.0dip" android:text="@string/_artist" android:singleLine="true" />
+            <TextView android:textColor="@color/dark_grey" android:ellipsize="end" android:id="@id/notice_artist" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="15.0dip" android:text="@string/_album" android:singleLine="true" />
+        </LinearLayout>
+        <ImageButton android:id="@id/notice_prebtn" android:background="@null" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginLeft="16.0dip" android:layout_marginBottom="5.0dip" android:src="@drawable/musicwidget_prev_selector" android:layout_alignLeft="@id/linearLayout1" android:layout_alignParentBottom="true" />
+        <ImageButton android:id="@id/notice_playbtn" android:background="@null" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginLeft="40.0dip" android:layout_marginBottom="5.0dip" android:src="@drawable/musicwidget_pause_selector" android:layout_toRightOf="@id/notice_prebtn" android:layout_alignParentBottom="true" />
+        <ImageButton android:id="@id/notice_exitbtn" android:background="@null" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/notice_exit_selector" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+        <ImageButton android:id="@id/notice_nextbtn" android:background="@null" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginLeft="40.0dip" android:layout_marginBottom="5.0dip" android:src="@drawable/musicwidget_next_selector" android:layout_toRightOf="@id/notice_playbtn" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</LinearLayout>

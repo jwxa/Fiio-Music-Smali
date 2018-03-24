@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="56.0dip">
+        <View android:background="@color/c7b7b7b" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_alignParentBottom="true" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+            <ImageView android:id="@id/device_icon_server" android:background="@color/back_50" android:layout_width="@dimen/listview_album_art" android:layout_height="@dimen/listview_album_art" android:layout_marginLeft="16.0px" android:src="@drawable/dlna_service" android:scaleType="center" />
+            <RelativeLayout android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/pic_text_marginleft">
+                <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/c303030" android:ellipsize="end" android:id="@id/dmr_name_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+                <CheckBox android:id="@id/dmr_cb" android:focusable="false" android:focusableInTouchMode="false" android:visibility="gone" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:checkMark="?android:listChoiceIndicatorMultiple" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

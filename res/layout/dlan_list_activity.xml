@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/list_bg_222e3e" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/top_layout" android:background="#ff181f28" android:layout_width="fill_parent" android:layout_height="@dimen/top_heard_item_height" android:layout_alignParentTop="true">
+        <ImageView android:id="@id/icon_list_view" android:layout_width="29.0dip" android:layout_height="29.0dip" android:layout_marginLeft="8.0dip" android:src="@drawable/btn_play_list_sl_selector" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/textcolor_cc_80" android:gravity="left" android:id="@id/dlan_list_content_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/dlan_music_text" android:lines="1" android:singleLine="true" android:layout_toRightOf="@id/icon_list_view" android:layout_centerVertical="true" />
+        <ImageButton android:id="@id/second_layout_search_btn" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/search_selector" android:layout_toLeftOf="@id/second_layout_8dp_view" android:layout_centerVertical="true" />
+        <View android:id="@id/second_layout_8dp_view" android:background="@color/transparent" android:layout_width="11.0dip" android:layout_height="8.0dip" android:layout_alignParentRight="true" />
+        <TextView android:background="@drawable/icon_imageview_botten_line" android:layout_width="fill_parent" android:layout_height="1.3299866dip" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/rl_list_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/top_layout">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.fiio.music.widget.SideBar android:id="@id/sidrbar" android:background="@drawable/btn_artrist_a_z" android:layout_width="@dimen/width_20" android:layout_height="fill_parent" android:layout_alignParentRight="true" />
+            <ListView android:id="@id/dlan_list_content" android:background="#ff202b39" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="@color/transparent" android:divider="@drawable/icon_imageview_botten_line" android:layout_toLeftOf="@id/sidrbar" />
+            <TextView android:textSize="@dimen/text_size_36" android:textStyle="bold" android:textColor="@color/textcolor_d3_80" android:gravity="center" android:id="@id/dialog" android:background="@drawable/icon_dialog_a_z_bg" android:visibility="invisible" android:layout_width="150.0px" android:layout_height="150.0px" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <View android:background="#8f999999" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    </LinearLayout>
+</RelativeLayout>

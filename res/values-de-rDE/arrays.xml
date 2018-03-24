@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="player_mode">
+        <item>Der Reihe nach spielen</item>
+        <item>Zufallswiedergabe</item>
+        <item>Titel wiederholen</item>
+        <item>Alles wiederholen</item>
+    </string-array>
+    <string-array name="list_tab_items">
+        <item>Lokale Musik</item>
+        <item>Netzwerkmusik</item>
+        <item>Downloadmanager</item>
+    </string-array>
+</resources>

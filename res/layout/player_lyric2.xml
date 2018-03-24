@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="310.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/lyric_empty" android:padding="15.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="100.0dip" android:textIsSelectable="false" />
+    <ListView android:gravity="center" android:id="@id/lyricshow" android:scrollbars="none" android:fadingEdge="none" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="40.0dip" android:layout_marginBottom="10.0dip" android:listSelector="@color/transparent" android:cacheColorHint="@color/transparent" android:divider="@color/transparent" android:overScrollMode="never" />
+    <RelativeLayout android:id="@id/lyric_progress_indicator" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="22.0dip" android:layout_alignParentLeft="true" android:layout_centerInParent="true">
+        <ImageView android:background="@drawable/paly_background1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="15.0sp" android:textColor="#ffffffff" android:id="@id/lyric_show_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="10.0sp" android:gravity="center" android:id="@id/lyric_progress_right" android:layout_width="30.0dip" android:layout_height="fill_parent" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/songinfo_albumicon_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/icon_playview_def_albumicon5" android:scaleType="centerCrop" />
+    <RelativeLayout android:background="@drawable/mask_lrc_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/songinfo_title" android:background="@color/color_1b1b1b" android:layout_width="fill_parent" android:layout_height="@dimen/height_70">
+            <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/textcolor_d3_80" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/songinformation" android:layout_centerInParent="true" />
+            <View android:background="@drawable/line_setting_line1" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/songinfo_enter_layout" android:background="@color/color_1b1b1b" android:layout_width="fill_parent" android:layout_height="@dimen/height_86" android:layout_alignParentBottom="true">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <Button android:textSize="@dimen/text_size_16" android:textColor="@color/textcolor_cc_80" android:id="@id/songinfo_cancle" android:background="@drawable/addplaylist_cancle_selector" android:visibility="gone" android:layout_width="190.0px" android:layout_height="36.0dip" android:text="@string/cancle" />
+                <Button android:textSize="@dimen/text_size_16" android:textColor="@color/textcolor_cc_80" android:id="@id/songinfo_ok" android:background="@drawable/button_background_blue" android:layout_width="126.66998dip" android:layout_height="36.0dip" android:layout_marginLeft="@dimen/margin_10" android:text="@string/ok" />
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/songinfo_enter_layout" android:layout_below="@id/songinfo_title" android:layout_alignParentLeft="true">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/height_38" android:layout_marginLeft="@dimen/margin_28" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/textcolor_d3_80" android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/songname" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/songinfo_songname_text" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="7.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/height_38" android:layout_marginLeft="@dimen/margin_28" android:layout_weight="1.0">
+                <TextView android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="7.0">
+                    <RatingBar android:id="@id/ratingBar_song" android:layout_width="wrap_content" android:layout_height="wrap_content" android:numStars="5" android:rating="2.0" android:layout_centerVertical="true" style="@style/MyRatingBar" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/height_38" android:layout_marginLeft="@dimen/margin_28" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/textcolor_d3_80" android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/_album" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/songinfo_album_text" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="7.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/height_38" android:layout_marginLeft="@dimen/margin_28" android:layout_weight="1.0">
+                <TextView android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="7.0">
+                    <RatingBar android:id="@id/ratingBar_album" android:layout_width="wrap_content" android:layout_height="wrap_content" android:numStars="5" android:rating="2.0" android:layout_centerVertical="true" style="@style/MyRatingBar" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/height_38" android:layout_marginLeft="@dimen/margin_28" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/textcolor_d3_80" android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/_artist" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/songinfo_artist_text" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="7.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/height_38" android:layout_marginLeft="@dimen/margin_28" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/textcolor_d3_80" android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/_style" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/songinfo_style_text" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="7.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/height_38" android:layout_marginLeft="@dimen/margin_28" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/textcolor_d3_80" android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/_year" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/songinfo_year_text" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="3.0" />
+                <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/textcolor_d3_80" android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/_trk" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/songinfo_trk_text" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="3.0" />
+            </LinearLayout>
+            <TextView android:background="@drawable/line_setting_line" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/height_38" android:layout_marginLeft="@dimen/margin_28" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/textcolor_d3_80" android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/_timelength" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/songinfo_timelength_text" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="3.0" />
+                <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/textcolor_d3_80" android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/_size" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/songinfo_size_text" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="3.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/height_38" android:layout_marginLeft="@dimen/margin_28" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/textcolor_d3_80" android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/_format" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/songinfo_format_text" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="3.0" />
+                <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/textcolor_d3_80" android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/_channel" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/songinfo_channel_text" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="3.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/height_38" android:layout_marginLeft="@dimen/margin_28" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/textcolor_d3_80" android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/bitrate" android:layout_weight="2.0" />
+                <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/songinfo_bitrate_text" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="5.0" />
+                <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/textcolor_d3_80" android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/sampleRate" android:layout_weight="2.0" />
+                <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/songinfo_samplerate_text" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="5.0" />
+            </LinearLayout>
+            <TextView android:background="@drawable/line_setting_line" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/height_38" android:layout_marginLeft="@dimen/margin_28" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/textcolor_d3_80" android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/_path" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/songinfo_path_text" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="7.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/height_38" android:layout_marginLeft="@dimen/margin_28" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/textcolor_d3_80" android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/_comment" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/songinfo_comment_text" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="7.0" />
+            </LinearLayout>
+            <TextView android:background="@drawable/line_setting_line" android:layout_width="fill_parent" android:layout_height="0.6700001dip" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

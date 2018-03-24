@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/setting_item_bg" android:layout_width="280.0dip" android:layout_height="228.66998dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/setting_item_bg" android:layout_width="280.0dip" android:layout_height="228.66998dip">
+        <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/textcolor_d3_80" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_20" android:layout_marginTop="@dimen/margin_30" android:text="@string/track_balance" />
+        <SeekBar android:id="@id/track_balance_seekbar" android:layout_width="230.66998dip" android:layout_height="wrap_content" android:maxHeight="7.3299866dip" android:max="120" android:progress="60" android:progressDrawable="@drawable/track_balance_seekbar" android:thumb="@drawable/icon_thumb_sleep" android:layout_centerInParent="true" />
+        <TextView android:textSize="@dimen/text_size_11" android:textColor="@color/textcolor_d3_15" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_38" android:text="@string/track_balance_l30" android:layout_below="@id/track_balance_seekbar" />
+        <TextView android:textSize="@dimen/text_size_11" android:textColor="@color/textcolor_d3_15" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_38" android:text="@string/track_balance_r60" android:layout_below="@id/track_balance_seekbar" android:layout_alignParentRight="true" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_30" android:layout_alignParentBottom="true">
+            <Button android:textSize="@dimen/text_size_15" android:textColor="@color/textcolor_cc_80" android:id="@id/track_balance_cancle" android:background="@color/btn_bg_566e8a" android:layout_width="126.66998dip" android:layout_height="36.0dip" android:layout_marginLeft="@dimen/margin_15" android:text="@string/cancle" />
+            <Button android:textSize="@dimen/text_size_15" android:textColor="@color/textcolor_cc_80" android:id="@id/track_balance_ok" android:background="@color/btn_bg_566e8a" android:layout_width="126.66998dip" android:layout_height="36.0dip" android:layout_marginLeft="@dimen/margin_10" android:text="@string/ok" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="15.0sp" android:textColor="#ff494949" android:gravity="center" android:id="@id/tv_download_list_item_number" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/ll_download_list_item_menu" android:layout_toRightOf="@id/tv_download_list_item_number" android:layout_centerVertical="true">
+        <TextView android:textSize="12.0sp" android:textColor="#ff494949" android:id="@id/tv_download_list_item_top" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="3.0dip" android:lines="1" android:singleLine="true" />
+        <TextView android:textSize="10.0sp" android:textColor="#ff999999" android:id="@id/tv_download_list_item_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="3.0dip" android:lines="1" android:singleLine="true" />
+        <ProgressBar android:id="@id/pb_download_list_item" android:layout_width="fill_parent" android:layout_height="5.0dip" android:layout_marginBottom="5.0dip" style="?android:attr/progressBarStyleHorizontal" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_download_list_item_menu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <Button android:id="@id/btn_download_list_item_pause" android:background="@drawable/btn_download_pause" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_margin="7.0dip" />
+        <Button android:id="@id/btn_download_list_item_delete" android:background="@drawable/btn_delete" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="7.0dip" />
+    </LinearLayout>
+</RelativeLayout>

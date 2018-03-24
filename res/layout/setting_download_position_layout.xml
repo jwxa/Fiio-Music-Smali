@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="320.0dip" android:layout_height="480.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/light_greytext" android:layout_width="fill_parent" android:layout_height="@dimen/height_70">
+        <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/textcolor_d3_80" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_20" android:text="@string/downloadString" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:background="@color/dialogBackground" android:layout_width="fill_parent" android:layout_height="182.66998dip">
+        <RelativeLayout android:id="@id/download_inner_colunm_id" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <ImageView android:id="@id/download_position_inner_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_18" android:layout_marginTop="@dimen/margin_26" android:src="@drawable/icon9_setting_download_toinner" />
+            <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/textcolor_d3_80" android:id="@id/download_position_inner_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_16" android:layout_marginTop="@dimen/margin_31" android:text="@string/downloadInner" android:layout_toRightOf="@id/download_position_inner_icon" />
+            <TextView android:textSize="@dimen/text_size_11" android:id="@id/inner_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_16" android:layout_marginTop="@dimen/margin_10" android:text="@string/default_sd_card_info_text" android:layout_toRightOf="@id/download_position_inner_icon" android:layout_below="@id/download_position_inner_text" />
+            <SeekBar android:id="@id/inner_seekbar" android:layout_width="@dimen/width_270" android:layout_height="3.3299866dip" android:layout_marginLeft="@dimen/margin_93" android:layout_marginTop="@dimen/margin_21" android:max="100" android:progress="20" android:progressDrawable="@drawable/seekbar9_download_position_define" android:thumb="@null" android:layout_below="@id/inner_size" />
+            <CheckBox android:id="@id/inner_radiobtn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_16" android:button="@drawable/btn_setting_radiobutton_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:background="@drawable/line_dialog_l" android:layout_width="fill_parent" android:layout_height="0.6700001dip" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/download_card_colunm_id" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <ImageView android:id="@id/download_location_external_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_18" android:layout_marginTop="@dimen/margin_26" android:src="@drawable/icon9_setting_download_tocard" />
+            <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/textcolor_d3_80" android:id="@id/external_card_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_16" android:layout_marginTop="@dimen/margin_31" android:text="@string/downloadCard" android:layout_toRightOf="@id/download_location_external_icon" />
+            <TextView android:textSize="@dimen/text_size_11" android:id="@id/external_card_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_16" android:layout_marginTop="@dimen/margin_10" android:text="@string/default_sd_card_info_text" android:layout_toRightOf="@id/download_location_external_icon" android:layout_below="@id/external_card_text" />
+            <SeekBar android:id="@id/external_seekbar" android:layout_width="@dimen/width_270" android:layout_height="3.3299866dip" android:layout_marginLeft="@dimen/margin_93" android:layout_marginTop="@dimen/margin_21" android:max="100" android:progress="20" android:progressDrawable="@drawable/seekbar9_download_position_define" android:thumb="@null" android:layout_below="@id/external_card_size" />
+            <CheckBox android:id="@id/external_radiobtn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_16" android:button="@drawable/btn_setting_radiobutton_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:background="@drawable/line_dialog_l" android:layout_width="fill_parent" android:layout_height="0.6700001dip" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="@color/setting_item_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="2.0">
+            <Button android:textSize="@dimen/text_size_16" android:textColor="@color/textcolor_cc_80" android:id="@id/volum_size_ok" android:background="@color/btn_bg_566e8a" android:layout_width="140.0dip" android:layout_height="36.0dip" android:text="@string/downloadOther" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/text_size_10" android:textColor="@color/textcolor_4f5a68_80" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_44" android:layout_marginRight="@dimen/margin_44" android:text="@string/downloadPosition" android:lineSpacingExtra="9.329987dip" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

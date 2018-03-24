@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/tv_test_content" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <Button android:layout_gravity="bottom|center|right" android:id="@id/button_next" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="20.0dip" android:text="@string/next" />
+    <ImageView android:layout_gravity="center|right|top" android:id="@id/imageView" android:background="#ff009900" android:visibility="gone" android:layout_width="150.0dip" android:layout_height="150.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip" />
+    <ListView android:id="@id/lv_file_list" android:focusable="true" android:visibility="gone" android:scrollbars="none" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="10.0dip" android:drawSelectorOnTop="false" android:divider="@drawable/list_line" android:layout_weight="5.0" style="@style/listview_style" />
+</FrameLayout>

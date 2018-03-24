@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="@dimen/viewpager_height">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+            <RelativeLayout android:layout_gravity="center_horizontal" android:id="@id/songname_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/songname_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_15" android:src="@drawable/icon_id3_songinfo1" />
+                <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/textcolor_d3_80" android:gravity="center" android:id="@id/songname_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bottom_bar_default_name" android:singleLine="true" android:layout_toRightOf="@id/songname_img" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RatingBar android:layout_gravity="center_horizontal" android:id="@id/ratingBar_song" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_13" android:numStars="5" android:rating="2.0" style="@style/MyRatingBar" />
+            <RelativeLayout android:layout_gravity="center_horizontal" android:id="@id/album_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_13">
+                <ImageView android:id="@id/album_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_15" android:src="@drawable/icon_id3_album1" />
+                <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/textcolor_d3_80" android:gravity="center" android:id="@id/album_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bottom_bar_default_text" android:singleLine="true" android:layout_toRightOf="@id/album_img" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RatingBar android:layout_gravity="center_horizontal" android:id="@id/ratingBar_album" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_13" android:numStars="5" android:rating="2.0" style="@style/MyRatingBar" />
+            <RelativeLayout android:layout_gravity="center_horizontal" android:id="@id/artist_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_13">
+                <ImageView android:id="@id/artist_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_15" android:src="@drawable/icon_id3_artist1" />
+                <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/textcolor_d3_80" android:gravity="center" android:id="@id/artist_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bottom_bar_default_text" android:singleLine="true" android:layout_toRightOf="@id/artist_img" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/lylic_greencolor" android:layout_gravity="center_horizontal" android:id="@id/song_bit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_22" android:text="@string/bit_name_info_text" android:singleLine="true" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/deep_dark" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/head_layout" android:background="@color/color_1b1b1b" android:layout_width="fill_parent" android:layout_height="@dimen/height_70">
+        <ImageView android:id="@id/addplaylist_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_15" android:src="@drawable/btn_dlna_n" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/white" android:id="@id/dlna_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dlna" android:layout_toRightOf="@id/addplaylist_icon" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/textcolor_cc_80" android:ellipsize="end" android:id="@id/dev_name_tv" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_toRightOf="@id/dlna_text_view" android:layout_centerVertical="true" />
+        <ProgressBar android:id="@id/player_prepairing" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginRight="20.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="?android:attr/progressBarStyleLarge" />
+    </RelativeLayout>
+    <View android:id="@id/line" android:background="@drawable/line_setting_line1" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/head_layout" />
+    <ListView android:id="@id/content_list" android:focusable="true" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:drawSelectorOnTop="false" android:divider="@null" android:layout_below="@id/line" style="@style/listview_style" />
+</RelativeLayout>

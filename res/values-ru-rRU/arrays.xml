@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="player_mode">
+        <item>Последовательное воспроизведение</item>
+        <item>Вразнобой</item>
+        <item>Повтор 1</item>
+        <item>Повтор всех</item>
+    </string-array>
+    <string-array name="list_tab_items">
+        <item>Текущая музыка</item>
+        <item>Сетевая медиа библиотека</item>
+        <item>Менеджер загрузок</item>
+    </string-array>
+</resources>

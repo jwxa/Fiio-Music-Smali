@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/pointer_view" android:focusable="true" android:layout_width="fill_parent" android:layout_height="310.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.fiio.music.widget.PointerTable2 android:id="@id/pointer_table" android:background="@drawable/icon_uvview_table_bottom7" android:focusable="true" android:layout_width="fill_parent" android:layout_height="310.0dip" />
+    <ImageView android:id="@id/img_uvline" android:layout_width="fill_parent" android:layout_height="225.0dip" android:src="@drawable/uv_orange_line" android:layout_alignBottom="@id/pointer_table" />
+    <ImageView android:id="@id/img_uv_white_line" android:layout_width="fill_parent" android:layout_height="225.0dip" android:src="@drawable/uv_white_line" android:layout_alignBottom="@id/pointer_table" />
+    <ImageView android:background="@drawable/icon_uvview_table_bottom6" android:layout_width="fill_parent" android:layout_height="310.0dip" />
+    <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/textcolor_d3" android:id="@id/uv_text" android:paddingTop="20.0dip" android:layout_width="wrap_content" android:layout_height="50.0dip" android:text="@string/vu_table" android:layout_alignParentTop="true" android:layout_centerInParent="true" />
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/cuelist_background" android:layout_width="wrap_content" android:layout_height="350.32812dip" android:layout_marginBottom="18.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:background="@color/setting_item_bg" android:layout_width="fill_parent" android:layout_height="357.32812dip">
+        <RelativeLayout android:orientation="vertical" android:background="@color/setting_item_bg" android:layout_width="wrap_content" android:layout_height="66.0px">
+            <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/textcolor_d3_80" android:gravity="center_vertical" android:id="@id/cuelist_title" android:layout_width="250.0dip" android:layout_height="54.669983dip" android:layout_marginLeft="@dimen/margin_35" android:layout_marginBottom="5.0dip" android:text="@string/setting_individuation_dialog_title" android:singleLine="true" />
+            <ImageView android:id="@id/cuelist_add_playlist" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="14.0dip" android:src="@drawable/btn_bottom_addplaylist_n" android:layout_toRightOf="@id/c" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <ListView android:layout_gravity="center_horizontal" android:id="@id/dialog_content" android:background="@drawable/cuelist_background" android:layout_width="410.0px" android:layout_height="252.0dip" android:divider="#ff343e4c" android:dividerHeight="1.0px" />
+        <RelativeLayout android:orientation="vertical" android:background="@color/setting_item_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <Button android:textSize="@dimen/text_size_15" android:textColor="@color/textcolor_cc_80" android:id="@id/cuelist_cancel" android:background="@color/btn_bg_566e8a" android:layout_width="139.0px" android:layout_height="42.0px" android:text="@string/cancle" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/top_layout" android:background="@color/ca5a5a5" android:layout_width="fill_parent" android:layout_height="@dimen/top_heard_item_height" android:layout_alignParentTop="true">
+            <ImageView android:id="@id/second_layout_music_play_list_view" android:layout_width="29.0dip" android:layout_height="29.0dip" android:layout_marginLeft="8.0dip" android:src="@drawable/btn_first_menu_local_music_list2" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/white" android:gravity="left" android:id="@id/my_list_content_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="80.0dip" android:lines="1" android:singleLine="true" android:layout_toRightOf="@id/second_layout_music_play_list_view" android:layout_centerVertical="true" />
+            <ImageButton android:id="@id/second_layout_search_btn" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/search_selector1" android:layout_toLeftOf="@id/second_layout_8dp_view" android:layout_centerVertical="true" />
+            <View android:id="@id/second_layout_8dp_view" android:background="@color/transparent" android:layout_width="11.0dip" android:layout_height="8.0dip" android:layout_toLeftOf="@id/second_layout_add_list_btn" />
+            <ImageButton android:id="@id/second_layout_add_list_btn" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:src="@drawable/btn_add_play_list_selector1" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:background="@drawable/icon_imageview_botten_line" android:layout_width="fill_parent" android:layout_height="2.0px" android:layout_alignParentBottom="true" />
+            <TextView android:textSize="@dimen/text_size_13" android:textColor="@color/white" android:id="@id/check_all_textview" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/check_all_text" android:layout_toLeftOf="@id/check_all_item_checkbox" android:layout_centerVertical="true" />
+            <CheckBox android:id="@id/check_all_item_checkbox" android:padding="10.0dip" android:visibility="gone" android:layout_width="@dimen/back_button_size" android:layout_height="@dimen/back_button_size" android:layout_marginRight="4.0dip" android:button="@drawable/checkbox_selector1" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/rl_list_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/bottom_layout_fg" android:layout_below="@id/top_layout">
+            <LinearLayout android:orientation="vertical" android:id="@id/linearLayout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <Button android:gravity="left" android:id="@id/btn_list_random_music2" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/btn_list_random_music" style="@style/btn_style2" />
+                <com.fiio.music.swipemenulistview.SwipeMenuListView android:id="@id/my_play_list_content" android:background="@color/cedecf1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="@color/transparent" android:divider="@color/cd1d1d1" android:dividerHeight="0.5dip" />
+                <com.fiio.music.swipemenulistview.SwipeMenuListView android:id="@id/my_song_list_content" android:background="@color/cedecf1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="@color/transparent" android:divider="@color/cd1d1d1" android:dividerHeight="0.5dip" />
+                <View android:background="#8f999999" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+        <FrameLayout android:id="@id/bottom_layout_fg" android:background="@color/cedecf1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <include android:id="@id/bottom_selector_view" android:visibility="gone" layout="@layout/bottom_selector2" />
+            <include android:id="@id/bottom_layout_content" layout="@layout/bottom_layout2" />
+        </FrameLayout>
+    </RelativeLayout>
+    <ProgressBar android:layout_gravity="center" android:id="@id/progressBar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:attr/progressBarStyleInverse" />
+    <ImageView android:layout_gravity="bottom|center|right" android:id="@id/configfragment_menu" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_20" android:layout_marginBottom="78.0dip" android:src="@drawable/btn_window_menu2" />
+</FrameLayout>

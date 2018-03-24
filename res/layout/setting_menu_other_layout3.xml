@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/setting_heard_item_height">
+        <TextView android:textSize="13.0sp" android:textColor="@color/commoncolor_white" android:id="@id/tv_ot" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/setting_item_marging_lfet" android:text="@string/setting_other_text" android:layout_centerVertical="true" />
+        <TextView android:background="@color/c11ffffff" android:layout_width="fill_parent" android:layout_height="0.39999998dip" android:layout_marginLeft="0.0dip" android:layout_marginRight="@dimen/margin_11" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/start_help_layout" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/setting_item_height">
+        <ImageView android:id="@id/img_ot" android:background="@drawable/icon_setting_help2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/setting_item_marging_lfet" android:layout_centerVertical="true" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/commoncolor_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/start_up_help_text" android:layout_toRightOf="@id/img_ot" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/more_triangle_start_help" android:layout_width="@dimen/setting_item_image_size_48px" android:layout_height="@dimen/setting_item_image_size_48px" android:layout_marginRight="7.0dip" android:src="@drawable/btn_scan_and_setting_search_all_n" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:background="@color/c11ffffff" android:layout_width="fill_parent" android:layout_height="0.39999998dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="@dimen/margin_11" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <RelativeLayout android:orientation="horizontal" android:id="@id/about_layout" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/setting_item_height">
+        <ImageView android:id="@id/img_about" android:background="@drawable/icon_setting_about2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/setting_item_marging_lfet" android:layout_centerVertical="true" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/commoncolor_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/about_app_tytle_text" android:layout_toRightOf="@id/img_about" android:layout_centerVertical="true" />
+        <ImageView android:layout_width="@dimen/setting_item_image_size_48px" android:layout_height="@dimen/setting_item_image_size_48px" android:layout_marginRight="7.0dip" android:src="@drawable/btn_scan_and_setting_search_all_n" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:background="@color/c11ffffff" android:layout_width="fill_parent" android:layout_height="0.39999998dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="@dimen/margin_11" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/no_media_layout" android:background="@color/cedecf1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.5sp" android:textColor="@color/c7b7b7b" android:gravity="center" android:id="@id/no_media_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" android:text="@string/no_find_any_song" android:layout_centerInParent="true" />
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/no_song_file2" android:layout_above="@id/no_media_text" android:layout_centerHorizontal="true" />
+    <Button android:textColor="@color/c00A4FB" android:id="@id/no_media_button" android:background="@drawable/scan_bt_selector2" android:layout_width="170.0dip" android:layout_height="36.0dip" android:text="@string/scan_title" android:layout_below="@id/no_media_text" android:layout_centerHorizontal="true" />
+</RelativeLayout>

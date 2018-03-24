@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_start_fiio_music" android:background="@drawable/guide_de_06" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:adjustViewBounds="false" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/iv_start_weibo" android:background="@drawable/guide_de_know" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="185.0dip" android:layout_marginBottom="81.0dip" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

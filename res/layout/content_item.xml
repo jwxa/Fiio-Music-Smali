@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="56.0dip">
+        <View android:background="@drawable/list_line" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentBottom="true" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+            <ImageView android:id="@id/icon_folder" android:background="@color/back_50" android:layout_width="@dimen/listview_album_art" android:layout_height="@dimen/listview_album_art" android:layout_marginLeft="16.0px" android:src="@drawable/icon_folder" android:scaleType="center" />
+            <RelativeLayout android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/pic_text_marginleft">
+                <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/textcolor_cc_80" android:ellipsize="end" android:id="@id/content_title_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+                <ImageView android:id="@id/icon_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/btn_scan_and_setting_search_all_n" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@null" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

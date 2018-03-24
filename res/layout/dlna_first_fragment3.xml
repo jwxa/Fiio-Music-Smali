@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/frame_dlna_main" android:background="@drawable/img_background4" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/dlna_title" android:background="@color/c3B3D42" android:layout_width="fill_parent" android:layout_height="@dimen/height_70">
+        <ImageView android:id="@id/addplaylist_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_15" android:src="@drawable/btn_dlna_n" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/commoncolor_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dlna" android:layout_toRightOf="@id/addplaylist_icon" android:layout_centerVertical="true" />
+        <View android:background="@drawable/line_setting_line1" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/head_layout" android:background="@color/transparent_background" android:layout_width="fill_parent" android:layout_height="85.0px" android:layout_below="@id/dlna_title">
+        <ImageView android:id="@id/backicon" android:visibility="gone" android:layout_width="@dimen/back_button_size" android:layout_height="@dimen/back_button_size" android:layout_marginTop="15.0dip" android:layout_marginRight="@dimen/song_item_margin_left" android:layout_marginBottom="15.0dip" android:src="@drawable/file_back_selector" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/text_size_medium" android:textColor="@color/commoncolor_white" android:ellipsize="start" android:id="@id/url_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/song_item_margin_left" android:text="@string/click_search_network" android:singleLine="true" android:layout_toLeftOf="@id/backicon" android:layout_centerVertical="true" />
+        <ImageView android:textSize="18.0sp" android:id="@id/search_ip" android:layout_width="@dimen/back_button_size" android:layout_height="@dimen/back_button_size" android:layout_marginTop="15.0dip" android:layout_marginRight="@dimen/song_item_margin_left" android:layout_marginBottom="15.0dip" android:src="@drawable/icon_dlna_search1" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ProgressBar android:layout_gravity="center" android:id="@id/a_progressbar" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_centerInParent="true" />
+    <View android:id="@id/line" android:background="@color/c11ffffff" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_below="@id/head_layout" />
+    <ListView android:id="@id/lan_listview" android:focusable="true" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:drawSelectorOnTop="false" android:divider="@null" android:layout_below="@id/line" style="@style/listview_style" />
+</RelativeLayout>

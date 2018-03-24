@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="drawable" name="drawable_setting_item_bg">#ff1f2b39</item>
+    <item type="drawable" name="orange_drawable">#ffffa500</item>
+</resources>

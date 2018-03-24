@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/height_75">
+        <ImageView android:id="@id/iv_list_item_icon2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:src="@drawable/btn_right_arrow_selector1" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/iv_list_item_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_12" android:src="@drawable/icon_default_foot_album" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/curplay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_12" android:layout_centerVertical="true" />
+        <LinearLayout android:orientation="vertical" android:id="@id/linearLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/pic_text_marginleft" android:layout_marginBottom="5.0dip" android:layout_toLeftOf="@id/iv_list_item_icon2" android:layout_toRightOf="@id/iv_list_item_icon" android:layout_centerVertical="true">
+            <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/white" android:gravity="bottom" android:id="@id/tv_search_list_item_top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/main_song_name_text" android:singleLine="true" />
+            <TextView android:textSize="@dimen/text_size_10" android:textColor="@color/text_color_7f7f7f" android:id="@id/tv_search_list_item_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Artist" android:singleLine="true" />
+        </LinearLayout>
+        <View android:background="@drawable/list_line1" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentBottom="true" android:layout_alignStart="@id/linearLayout" />
+    </RelativeLayout>
+</RelativeLayout>

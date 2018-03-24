@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#c8f3f4f1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:gravity="left" android:id="@id/btn_list_random_music" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/btn_list_random_music" style="@style/btn_style2" />
+    <View android:background="#8f999999" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <ListView android:id="@id/lv_list_music" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:cacheColorHint="@color/transparent" android:divider="@color/list_divider" android:dividerHeight="1.0dip" />
+    <View android:background="#8f999999" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</LinearLayout>

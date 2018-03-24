@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="player_mode">
+        <item>Sequential Play</item>
+        <item>Shuffle</item>
+        <item>Loop One</item>
+        <item>Loop All</item>
+    </string-array>
+    <string-array name="list_tab_items">
+        <item>Local Music</item>
+        <item>Network Media Lib</item>
+        <item>Download Manager</item>
+    </string-array>
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/addplaylist_title" android:background="@color/ca5a5a5" android:layout_width="fill_parent" android:layout_height="@dimen/height_70">
+        <ImageView android:id="@id/addplaylist_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_15" android:src="@drawable/btn_playlist1_n" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/add_playlist" android:layout_toRightOf="@id/addplaylist_icon" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/newpalylist" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_12" android:src="@drawable/newplaylist_add_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/addplaylist_cancle_layout" android:background="@color/cedecf1" android:layout_width="fill_parent" android:layout_height="@dimen/height_70" android:layout_alignParentBottom="true">
+        <Button android:textSize="@dimen/text_size_16" android:textColor="@color/white" android:id="@id/addplaylist_cancle" android:background="@drawable/button_background_grivity" android:layout_width="190.0px" android:layout_height="54.0px" android:text="@string/cancle" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <ListView android:id="@id/addplaylist_list" android:background="@color/cedecf1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="@color/transparent" android:divider="@color/cd1d1d1" android:dividerHeight="0.5dip" android:layout_above="@id/addplaylist_cancle_layout" android:layout_below="@id/addplaylist_title" />
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="player_mode">
+        <item>順序播放</item>
+        <item>隨機播放</item>
+        <item>單曲迴圈</item>
+        <item>列表迴圈</item>
+    </string-array>
+    <string-array name="list_tab_items">
+        <item>本地音樂</item>
+        <item>網路音樂</item>
+        <item>下載管理</item>
+    </string-array>
+</resources>

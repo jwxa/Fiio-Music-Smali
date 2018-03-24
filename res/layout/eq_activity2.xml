@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/cedecf1" android:fitsSystemWindows="false" android:clipToPadding="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/title_layout" android:background="@color/ca5a5a5" android:layout_width="fill_parent" android:layout_height="@dimen/height_68">
+        <ImageButton android:id="@id/eq_reset" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_16" android:src="@drawable/eq_reset_selector1" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/white" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_equalizer" android:layout_centerInParent="true" />
+        <RelativeLayout android:id="@id/checkbox_enable_layout" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+            <CheckBox android:id="@id/enable" android:background="@drawable/setting_line_ctrl_selector1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <com.fiio.music.widget.BezierCurveChart android:id="@id/beziercurvechart" android:background="@drawable/btn_eq_grid_bg2" android:layout_width="fill_parent" android:layout_height="@dimen/height_182" android:layout_below="@id/title_layout" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/eq_bar" android:background="@color/cedecf1" android:layout_width="fill_parent" android:layout_height="240.0dip" android:layout_below="@id/beziercurvechart">
+        <include android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" layout="@layout/eq_scale2" />
+        <RelativeLayout android:background="@color/cedecf1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="7.0">
+            <android.support.v4.view.ViewPager android:id="@id/eq_viewpager" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="12.0dip" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:layout_alignBottom="@id/eq_viewpager" android:layout_centerHorizontal="true">
+                <ImageView android:id="@id/icon_eq_page_label_current" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_eq_current_view2" />
+                <ImageView android:id="@id/icon_eq_page_label_other" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_15" android:src="@drawable/icon_eq_viewtis2" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@id/eq_foot" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="3.0" android:layout_below="@id/beziercurvechart" android:layout_alignParentBottom="true">
+        <com.fiio.music.widget.ClickableSlidingDrawer android:id="@id/eq_slidingdrawer" android:layout_width="fill_parent" android:layout_height="333.32812dip" android:layout_alignParentBottom="true" android:bottomOffset="79.0dip" android:allowSingleTap="false" android:handle="@id/handle" android:content="@id/content">
+            <RelativeLayout android:id="@id/handle" android:background="@color/cedecf1" android:layout_width="fill_parent" android:layout_height="130.0dip">
+                <RadioGroup android:id="@id/eq_radio_group" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <LinearLayout android:orientation="horizontal" android:id="@id/first_layout" android:layout_width="fill_parent" android:layout_height="42.669983dip">
+                        <RadioButton android:id="@id/pop" android:paddingTop="@dimen/margin_10" android:paddingBottom="@dimen/margin_10" android:layout_width="0.0dip" android:layout_height="fill_parent" android:button="@null" android:drawableTop="@drawable/eq_pop_selector2" android:layout_weight="1.0" />
+                        <RadioButton android:id="@id/resetss" android:paddingTop="@dimen/margin_10" android:paddingBottom="@dimen/margin_10" android:layout_width="0.0dip" android:layout_height="fill_parent" android:button="@null" android:drawableTop="@drawable/eq_resetss_selector2" android:layout_weight="1.0" />
+                        <RadioButton android:id="@id/rock" android:paddingTop="@dimen/margin_10" android:paddingBottom="@dimen/margin_10" android:layout_width="0.0dip" android:layout_height="fill_parent" android:button="@null" android:drawableTop="@drawable/eq_rock_selector2" android:layout_weight="1.0" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:id="@id/second_layout" android:layout_width="fill_parent" android:layout_height="42.669983dip">
+                        <RadioButton android:id="@id/dance" android:paddingTop="@dimen/margin_10" android:paddingBottom="@dimen/margin_10" android:layout_width="0.0dip" android:layout_height="fill_parent" android:button="@null" android:drawableTop="@drawable/eq_dance_selector2" android:layout_weight="1.0" />
+                        <RadioButton android:id="@id/blues" android:paddingTop="@dimen/margin_10" android:paddingBottom="@dimen/margin_10" android:layout_width="0.0dip" android:layout_height="fill_parent" android:button="@null" android:drawableTop="@drawable/eq_blues_selector2" android:layout_weight="1.0" />
+                        <RadioButton android:id="@id/metal" android:paddingTop="@dimen/margin_10" android:paddingBottom="@dimen/margin_10" android:layout_width="0.0dip" android:layout_height="fill_parent" android:button="@null" android:drawableTop="@drawable/eq_metal_selector2" android:layout_weight="1.0" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:id="@id/third_layout" android:layout_width="fill_parent" android:layout_height="42.669983dip">
+                        <RadioButton android:id="@id/voice" android:paddingTop="@dimen/margin_10" android:paddingBottom="@dimen/margin_10" android:layout_width="0.0dip" android:layout_height="fill_parent" android:button="@null" android:drawableTop="@drawable/eq_voice_selector2" android:layout_weight="1.0" />
+                        <RadioButton android:id="@id/classic" android:paddingTop="@dimen/margin_10" android:paddingBottom="@dimen/margin_10" android:layout_width="0.0dip" android:layout_height="fill_parent" android:button="@null" android:drawableTop="@drawable/eq_classic_selector2" android:layout_weight="1.0" />
+                        <RadioButton android:id="@id/jazz" android:paddingTop="@dimen/margin_10" android:paddingBottom="@dimen/margin_10" android:layout_width="0.0dip" android:layout_height="fill_parent" android:button="@null" android:drawableTop="@drawable/eq_jazz_selector2" android:layout_weight="1.0" />
+                    </LinearLayout>
+                </RadioGroup>
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/content" android:background="@color/cedecf1" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </com.fiio.music.widget.ClickableSlidingDrawer>
+    </RelativeLayout>
+</RelativeLayout>

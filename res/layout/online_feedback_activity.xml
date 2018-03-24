@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="#ff242424" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="42.0dip">
+        <ImageView android:id="@id/iv_online_feedbac_back" android:background="@layout/img_btn_press" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_centerVertical="true" android:contentDescription="@string/online_feedback" />
+        <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="start|center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/online_feedback" android:singleLine="true" android:layout_marginStart="30.0dip" />
+        <Button android:textColor="#ffffffff" android:id="@id/bt_online_feedback_commit" android:background="@layout/img_btn_feedback_press" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/online_feedback_commit" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <RelativeLayout android:background="#ff242424" android:clickable="true" android:layout_width="fill_parent" android:layout_height="42.0dip" android:layout_marginTop="10.0dip" android:layout_marginStart="12.0dip" android:layout_marginEnd="12.0dip">
+        <RadioGroup android:gravity="center" android:orientation="horizontal" android:id="@id/rg_group" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <RadioButton android:id="@id/rb_suggestion" android:checked="true" android:button="@layout/online_feedback_rb_press" android:text="@string/online_feedbck_product_suggestion" />
+            <View android:layout_width="20.0dip" android:layout_height="fill_parent" />
+            <RadioButton android:id="@id/rb_report" android:button="@layout/online_feedback_rb_press" android:text="@string/online_feedback_prgram_error_reporting" />
+        </RadioGroup>
+    </RelativeLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="280.0dip">
+        <EditText android:textSize="15.0sp" android:textColor="#ff878787" android:gravity="top" android:id="@id/ed_content" android:background="#ff242424" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:hint="@string/online_feedbck_ed_suggestion" />
+        <LinearLayout android:gravity="center" android:layout_gravity="end|bottom|center" android:orientation="horizontal" android:background="#ff242424" android:layout_width="wrap_content" android:layout_height="20.0dip" android:layout_marginTop="3.0dip">
+            <TextView android:textColor="@color/ed_online_feedback_hint" android:id="@id/tv_online_feedback_current_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/online_feedback_text_curren" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/online_feedback_text_seperator" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/online_feedback_text_total" />
+        </LinearLayout>
+    </FrameLayout>
+    <EditText android:textSize="15.0sp" android:textColor="#ff878787" android:gravity="start|center" android:id="@id/ed_phone_email" android:background="#ff242424" android:layout_width="fill_parent" android:layout_height="36.0dip" android:layout_marginTop="5.0dip" android:hint="@string/online_feedbck_ed_phone_email" />
+</LinearLayout>

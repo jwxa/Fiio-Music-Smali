@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/c358ee9" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" android:layout_centerVertical="true">
+        <ImageView android:id="@id/foot_play" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/foot_play_selector1" android:scaleType="center" android:layout_weight="1.0" />
+        <ImageView android:id="@id/add_to_mylove" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/foot_add_mylove_selector1" android:scaleType="center" android:layout_weight="1.0" />
+        <ImageView android:id="@id/add_to_playlist" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/foot_addplaylist_selector1" android:scaleType="center" android:layout_weight="1.0" />
+        <ImageView android:id="@id/foot_delete" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/foot_delete_selector1" android:scaleType="center" android:layout_weight="1.0" />
+        <ImageView android:id="@id/foot_send" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/foot_send_selector1" android:scaleType="center" android:layout_weight="1.0" />
+    </LinearLayout>
+</RelativeLayout>

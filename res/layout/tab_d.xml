@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/view_page_content" android:background="@color/color_bg_181f28" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.fiio.music.swipemenulistview.SwipeMenuListView android:id="@id/song_list_content" android:background="@color/list_bg_222e3e" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="@color/transparent" android:divider="@drawable/icon_imageview_botten_line" android:dividerHeight="0.70000005dip" />
+    <com.fiio.music.swipemenulistview.SwipeMenuListView android:id="@id/smlv_list_change_content" android:background="@color/list_bg_222e3e" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="@color/transparent" android:divider="@drawable/icon_imageview_botten_line" android:dividerHeight="0.70000005dip" />
+</LinearLayout>

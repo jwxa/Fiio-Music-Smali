@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/dialogBackground" android:layout_width="280.0dip" android:layout_height="221.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="44.0dip">
+        <TextView android:textSize="15.0sp" android:textColor="@color/textcolor_d3" android:background="@color/background_special" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_13" android:layout_marginTop="@dimen/margin_20" android:text="@string/search_song_lrc_text" />
+    </RelativeLayout>
+    <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="1.2999878dip" android:src="@drawable/line9_setting_alertdialog_sepline_l" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="10.0dip">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="15.0sp" android:textColor="@color/textcolor_d3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/the_artist" />
+            <EditText android:textSize="15.0sp" android:textColor="@color/textcolor_d3" android:id="@id/artist_tv" android:background="@drawable/btn_addplaylist_cancle_p" android:layout_width="175.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:singleLine="true" />
+        </LinearLayout>
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="10.0dip" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="15.0sp" android:textColor="@color/textcolor_d3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/the_songname" />
+            <EditText android:textSize="15.0sp" android:textColor="@color/textcolor_d3" android:id="@id/music_tv" android:background="@drawable/btn_addplaylist_cancle_p" android:layout_width="175.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="1.2999878dip" android:src="@drawable/line9_setting_alertdialog_sepline_s" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="75.32999dip">
+        <Button android:textSize="15.0sp" android:textColor="#ffcccccc" android:id="@id/cancel_btn" android:background="#ff566e8a" android:layout_width="100.0dip" android:layout_height="36.0dip" android:layout_marginLeft="30.0dip" android:text="@string/cancle" android:layout_centerVertical="true" />
+        <Button android:textSize="15.0sp" android:textColor="#ffcccccc" android:id="@id/ok_btn" android:background="#ff566e8a" android:layout_width="100.0dip" android:layout_height="36.0dip" android:layout_marginRight="30.0dip" android:text="@string/ok" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

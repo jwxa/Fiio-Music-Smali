@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/bar_setting_top" android:visibility="gone" layout="@layout/setting_top" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_scan_music_bottom" android:background="@drawable/btn_common" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <Button android:id="@id/btn_scan_ok" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/btn_scan_ok" style="@style/btn_style" />
+        <Button android:id="@id/btn_scan_add" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/btn_scan_add" style="@style/btn_style" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:background="#8f00000f" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ListView android:layout_gravity="top" android:id="@id/lv_scan_music_list" android:fadingEdge="none" android:layout_width="150.0dip" android:layout_height="wrap_content" android:cacheColorHint="@color/transparent" android:divider="#8f999999" android:dividerHeight="1.0dip" />
+    </LinearLayout>
+    <include android:id="@id/scan_all_view" layout="@layout/scan_all_view" />
+    <include android:id="@id/scan_button_layout" layout="@layout/scan_button_activity2" />
+</RelativeLayout>

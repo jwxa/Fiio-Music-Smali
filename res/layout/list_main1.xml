@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/frame_main" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:music="http://schemas.android.com/apk/res/com.fiio.music">
+    <com.fiio.music.widget.StickyLayout android:orientation="vertical" android:id="@id/sticky_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="0.0dip">
+        <RelativeLayout android:orientation="vertical" android:id="@id/sticky_header" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:background="@drawable/main_album_bg1" android:layout_width="fill_parent" android:layout_height="169.32999dip">
+                    <FrameLayout android:focusable="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="-8.0dip" android:layout_marginTop="-5.0dip">
+                        <GridView android:id="@id/main_album_icon_bg" android:layout_width="336.0dip" android:layout_height="fill_parent" android:horizontalSpacing="0.6700001dip" android:verticalSpacing="0.6700001dip" android:stretchMode="columnWidth" android:columnWidth="@dimen/width_80" android:numColumns="6" />
+                    </FrameLayout>
+                    <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/main_ablum_mask_bg1" android:scaleType="centerCrop" />
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="-1.0dip">
+                        <ImageButton android:id="@id/first_setting_button" android:background="#00000000" android:layout_width="@dimen/setting_and_search_btn_height" android:layout_height="@dimen/setting_and_search_btn_height" android:layout_marginLeft="7.0dip" android:src="@drawable/btn_first_setting_selector1" android:layout_alignParentLeft="true" />
+                        <ImageButton android:id="@id/first_search_button" android:background="#00000000" android:layout_width="@dimen/setting_and_search_btn_height" android:layout_height="@dimen/setting_and_search_btn_height" android:layout_marginRight="7.0dip" android:src="@drawable/search_selector2" android:layout_alignParentRight="true" />
+                    </RelativeLayout>
+                    <ImageView android:background="@drawable/icon_default_album_backg1" android:layout_width="262.0px" android:layout_height="182.0px" android:layout_marginTop="15.0dip" android:layout_alignParentTop="true" android:layout_centerInParent="true" />
+                    <LinearLayout android:id="@id/default_cover_layout" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_marginLeft="85.0dip" android:layout_marginTop="24.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_centerInParent="true" android:layout_centerHorizontal="true">
+                        <RelativeLayout android:background="@color/white_60" android:layout_width="148.0px" android:layout_height="148.0px">
+                            <android.support.v4.view.ViewPager android:id="@id/default_cover_image_viewpager" android:background="@drawable/icon_default_album_cover1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <ImageButton android:id="@id/first_music_entery_button" android:background="#00000000" android:layout_width="@dimen/music_entery_btn_height" android:layout_height="@dimen/music_entery_btn_height" android:layout_marginRight="12.0dip" android:layout_marginBottom="4.0dip" android:src="@drawable/btn_first_music_entery_selector1" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+                    <com.fiio.music.widget.AlwaysMarqueeTextView android:textSize="16.0sp" android:textColor="#ffffffff" android:ellipsize="marquee" android:gravity="left" android:id="@id/main_song_name_tv" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:singleLine="true" android:layout_toLeftOf="@id/first_music_entery_button" android:layout_above="@id/art_name_info_tv" android:layout_alignParentLeft="true" android:marqueeRepeatLimit="marquee_forever" />
+                    <TextView android:textSize="11.0sp" android:textColor="#7fffffff" android:id="@id/art_name_info_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginBottom="5.0dip" android:singleLine="true" android:layout_toLeftOf="@id/first_music_entery_button" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+                </RelativeLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="84.0dip">
+                    <com.fiio.music.widget.DragGridView android:gravity="center" android:id="@id/dragGridView" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="84.0dip" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:horizontalSpacing="0.0dip" android:verticalSpacing="10.0dip" android:stretchMode="columnWidth" android:numColumns="3" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/sticky_content" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.fiio.music.widget.PinnedHeaderExpandableListView android:scrollbarAlwaysDrawHorizontalTrack="false" android:id="@id/expandablelist" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="@null" android:groupIndicator="@null" android:childIndicatorLeft="0.0dip" android:childDivider="@drawable/icon_imageview_botten_line11" android:divider="@drawable/icon_imageview_botten_line11" android:dividerHeight="0.70000005dip" />
+        </LinearLayout>
+    </com.fiio.music.widget.StickyLayout>
+    <RelativeLayout android:id="@id/rl_parent_cotent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:id="@id/rl_list_main_content" layout="@layout/local_music_layout" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/player_top_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="55.0dip">
+            <include android:id="@id/list_tab_item_music" layout="@layout/list_tab_item" />
+            <include android:id="@id/list_tab_item_web" layout="@layout/list_tab_item" />
+            <include android:id="@id/list_tab_item_download" layout="@layout/list_tab_item" />
+        </LinearLayout>
+        <com.fiio.music.custom.FlingGalleryView android:id="@id/fgv_list_main" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include android:id="@id/list_main_music" layout="@layout/list_main_music" />
+            <include android:id="@id/list_main_web" layout="@layout/list_main_web" />
+            <include android:id="@id/list_main_download" layout="@layout/list_main_download" />
+        </com.fiio.music.custom.FlingGalleryView>
+    </RelativeLayout>
+</FrameLayout>

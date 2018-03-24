@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ff595959" android:layout_width="280.0dip" android:layout_height="221.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="54.0dip">
+        <TextView android:textSize="15.0sp" android:textColor="@color/white" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:layout_marginTop="20.0dip" android:text="@string/memoryplay" />
+        <CheckBox android:id="@id/memory_play_switch_button_id" android:background="@drawable/setting_line_ctrl_selector1" android:layout_width="38.599976dip" android:layout_height="38.599976dip" android:layout_marginLeft="219.32999dip" android:button="@null" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ImageView android:layout_width="fill_parent" android:layout_height="1.2999878dip" android:src="@drawable/line9_setting_alertdialog_sepline_l" />
+    <RadioGroup android:layout_width="fill_parent" android:layout_height="87.899994dip">
+        <RadioButton android:textSize="13.0sp" android:textColor="@color/white" android:id="@id/mpList_id" android:paddingLeft="21.329987dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="43.299988dip" android:button="@null" android:text="@string/mamory_song" android:drawableRight="@drawable/btn_setting_radiobutton_selector1" />
+        <ImageView android:layout_width="fill_parent" android:layout_height="1.2999878dip" android:src="@drawable/line9_setting_alertdialog_sepline_s" />
+        <RadioButton android:textSize="13.0sp" android:textColor="@color/white" android:id="@id/mpLocation_id" android:paddingLeft="21.329987dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="43.299988dip" android:button="@null" android:text="@string/mamory_location" android:drawableRight="@drawable/btn_setting_radiobutton_selector1" />
+    </RadioGroup>
+    <ImageView android:layout_width="fill_parent" android:layout_height="1.2999878dip" android:src="@drawable/line9_setting_alertdialog_sepline_s" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="75.32999dip">
+        <Button android:textSize="15.0sp" android:textColor="@color/white" android:id="@id/memory_play_cancel_id" android:background="@drawable/button_background_grivity" android:layout_width="127.0dip" android:layout_height="36.0dip" android:layout_marginLeft="9.329987dip" android:text="@string/cancle" android:layout_centerVertical="true" />
+        <Button android:textSize="15.0sp" android:textColor="@color/white" android:id="@id/memory_play_confirm_id" android:background="@drawable/button_background_blue" android:layout_width="127.0dip" android:layout_height="36.0dip" android:layout_marginLeft="143.32999dip" android:text="@string/ok" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

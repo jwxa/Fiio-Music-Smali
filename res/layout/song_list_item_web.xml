@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="55.0dip">
+        <ImageView android:id="@id/listview_item_image" android:layout_width="@dimen/listview_album_art" android:layout_height="@dimen/listview_album_art" android:layout_marginLeft="10.669983dip" android:src="@drawable/icon_search_song" android:scaleType="centerCrop" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <View android:background="@drawable/list_line" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentBottom="true" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/pic_text_marginleft" android:layout_marginBottom="5.0dip" android:layout_toLeftOf="@id/quick_context_tip" android:layout_toRightOf="@id/listview_item_image" android:layout_centerVertical="true">
+            <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/textcolor_cc_80" android:ellipsize="end" android:gravity="bottom" android:id="@id/tv_web_list_item_top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/main_song_name_text" android:singleLine="true" />
+            <TextView android:textSize="@dimen/text_size_10" android:textColor="@color/textcolor_cc_15" android:ellipsize="end" android:id="@id/tv_web_list_item_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/Artist" android:singleLine="true" />
+            <RatingBar android:id="@id/item_ratingbar" android:focusable="false" android:visibility="gone" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_5" android:numStars="5" android:rating="2.0" android:isIndicator="true" style="@style/MyRatingBar" />
+        </LinearLayout>
+    </RelativeLayout>
+    <TextView android:textSize="15.0sp" android:textColor="#ff494949" android:gravity="center" android:id="@id/tv_web_list_item_number" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_web_list_item_do" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="7.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <Button android:id="@id/ibtn_web_list_item_download" android:background="@drawable/btn_download_icon" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_margin="7.0dip" />
+    </LinearLayout>
+</RelativeLayout>

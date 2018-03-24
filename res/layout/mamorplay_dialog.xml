@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/setting_item_bg" android:layout_width="280.0dip" android:layout_height="221.32999dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/setting_item_bg" android:layout_width="280.0dip" android:layout_height="221.32999dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+        <RelativeLayout android:id="@id/mamorpaly_title" android:layout_width="fill_parent" android:layout_height="54.0dip">
+            <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/textcolor_d3_80" android:id="@id/songbook_updata" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_20" android:layout_marginTop="@dimen/margin_30" android:text="@string/memoryplay" />
+            <CheckBox android:id="@id/mamoryplay_disable" android:background="@drawable/setting_line_ctrl_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_12" android:layout_marginRight="@dimen/margin_38" android:button="@null" android:layout_alignParentRight="true" />
+            <TextView android:id="@id/line" android:background="@drawable/line_dialog_l" android:layout_width="wrap_content" android:layout_height="0.6700001dip" android:layout_marginTop="@dimen/margin_30" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/mamorpaly_title">
+            <RelativeLayout android:id="@id/mamory_song_layout" android:layout_width="fill_parent" android:layout_height="44.669983dip">
+                <TextView android:textSize="@dimen/text_size_13" android:textColor="@color/textcolor_cc_80" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_30" android:text="@string/mamory_song" android:layout_centerVertical="true" />
+                <RadioButton android:id="@id/mamory_song" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_26" android:button="@drawable/radioburron" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <TextView android:id="@id/line" android:background="@drawable/line_dialog_l" android:layout_width="wrap_content" android:layout_height="0.6700001dip" android:layout_marginTop="@dimen/margin_30" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/mamory_location_laytou" android:layout_width="fill_parent" android:layout_height="44.669983dip" android:layout_below="@id/line">
+                <TextView android:textSize="@dimen/text_size_13" android:textColor="@color/textcolor_cc_80" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_30" android:text="@string/mamory_location" android:layout_centerVertical="true" />
+                <RadioButton android:id="@id/mamory_location" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_26" android:button="@drawable/radioburron" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <TextView android:id="@id/line" android:background="@drawable/line_dialog_l" android:layout_width="wrap_content" android:layout_height="0.6700001dip" android:layout_marginTop="@dimen/margin_30" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_30" android:layout_alignParentBottom="true">
+            <Button android:textSize="@dimen/text_size_15" android:textColor="@color/textcolor_cc_80" android:id="@id/mamoryplay_cancle" android:background="@color/btn_bg_566e8a" android:layout_width="126.66998dip" android:layout_height="36.0dip" android:layout_marginLeft="@dimen/margin_15" android:text="@string/cancle" />
+            <Button android:textSize="@dimen/text_size_15" android:textColor="@color/textcolor_cc_80" android:id="@id/mamoryplay_ok" android:background="@color/btn_bg_566e8a" android:layout_width="126.66998dip" android:layout_height="36.0dip" android:layout_marginLeft="@dimen/margin_10" android:text="@string/ok" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

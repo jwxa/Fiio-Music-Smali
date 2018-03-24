@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/panel_musicwidget_s_widget_bg" android:layout_width="@dimen/width_437" android:layout_height="@dimen/height_108px_72dp" android:layout_centerHorizontal="true">
+        <RelativeLayout android:id="@id/layout_widget_icon_s" android:background="@drawable/icon_appwidget_s_albumicon_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_5" android:layout_centerVertical="true">
+            <ImageView android:id="@id/iv_widget_album" android:layout_width="@dimen/width_86" android:layout_height="@dimen/height_86" android:src="@drawable/btn_musicwidget_s_bg_icon" android:scaleType="fitCenter" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/musicwidget_info" android:layout_width="fill_parent" android:layout_height="@dimen/height_38" android:layout_toRightOf="@id/layout_widget_icon_s">
+            <ImageButton android:id="@id/musicwidget_lrc_s" android:background="@null" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_20" android:src="@drawable/musicwidget_lrc_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <ImageButton android:id="@id/musicwidget_lock_s" android:background="@null" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_12" android:src="@drawable/msicwidget_lock_selector" android:layout_toLeftOf="@id/musicwidget_lrc_s" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/text_size_20_px" android:textColor="@color/textcolor_31373e" android:id="@id/tv_widget_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_16" android:layout_marginTop="@dimen/margin_12" android:text="@string/playview_song_name" android:layout_toLeftOf="@id/musicwidget_lock_s" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/margin_5" android:layout_toRightOf="@id/layout_widget_icon_s" android:layout_below="@id/musicwidget_info">
+            <ImageButton android:id="@id/btn_widget_prev" android:background="@null" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/musicwidget_prev_selector" android:layout_weight="1.0" />
+            <ImageButton android:id="@id/btn_widget_player" android:background="@null" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/musicwidget_play_selector" android:layout_weight="1.0" />
+            <ImageButton android:id="@id/btn_widget_pause" android:background="@null" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/musicwidget_pause_selector" android:layout_weight="1.0" />
+            <ImageButton android:id="@id/btn_widget_next" android:background="@null" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/musicwidget_next_selector" android:layout_weight="1.0" />
+        </LinearLayout>
+        <ProgressBar android:id="@id/pb_widget_player" android:layout_width="fill_parent" android:layout_height="1.3299866dip" android:layout_margin="0.6700001dip" android:layout_marginTop="0.6700001dip" android:max="100" android:progress="50" android:progressDrawable="@drawable/musicwidget_s_seekbar" android:thumb="@drawable/slide_musicwidget_s_thum" android:layout_below="@id/layout_widget_icon_s" style="?android:attr/progressBarStyleHorizontal" />
+    </RelativeLayout>
+</RelativeLayout>

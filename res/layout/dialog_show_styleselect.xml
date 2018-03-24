@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:background="@color/cedecf1" android:layout_width="300.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:layout_gravity="center_horizontal" android:id="@id/gridview" android:layout_width="wrap_content" android:layout_height="200.0dip" android:horizontalSpacing="5.0dip" android:verticalSpacing="5.0dip" android:stretchMode="columnWidth" android:columnWidth="90.0dip" android:numColumns="auto_fit" android:divider="@color/cd1d1d1" android:dividerHeight="0.5dip" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/cedecf1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignBottom="@id/gridview">
+        <Button android:id="@id/imgbutton_no" android:background="@drawable/button_background_grivity" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="@string/text_cancel" android:layout_weight="1.0" />
+        <Button android:id="@id/imgbutton_sure" android:background="@drawable/button_background_blue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="@string/text_ok" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

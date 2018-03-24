@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/group_item_layout" android:background="@drawable/menu_bg" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="15.0sp" android:textColor="#7fffffff" android:id="@id/group_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/group_title_iamge" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/group_title_iamge" android:layout_width="@dimen/recent_and_more_button_height" android:layout_height="@dimen/recent_and_more_button_height" android:layout_marginLeft="1.0dip" android:src="@drawable/btn_menu_recent_play_n" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/group_title_more_button" android:layout_width="@dimen/recent_and_more_button_height" android:layout_height="@dimen/recent_and_more_button_height" android:layout_marginRight="8.0dip" android:src="@drawable/btn_menu_recent_play_more_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/image" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/collapse" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

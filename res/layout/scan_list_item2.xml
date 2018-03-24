@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:background="@drawable/line_setting_line1" android:layout_width="fill_parent" android:layout_height="0.5px" android:layout_alignParentBottom="true" />
+    <ImageView android:id="@id/iv_scan_item_icon" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_margin="5.0dip" android:src="@drawable/icon_folder1" android:scaleType="centerInside" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/c7b7b7b" android:id="@id/tv_scan_item_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/cb_scan_item" android:layout_toRightOf="@id/iv_scan_item_icon" android:layout_centerVertical="true" />
+    <CheckBox android:id="@id/cb_scan_item" android:padding="10.0dip" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="@dimen/back_button_size" android:layout_height="@dimen/back_button_size" android:layout_marginRight="@dimen/margin_20" android:button="@drawable/checkbox_selector1" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:android_custom="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="@color/c3B3D42" android:layout_width="fill_parent" android:layout_height="@dimen/height_70">
+        <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_20" android:text="@string/scan" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/scan_linear" android:background="@drawable/scan_bg2" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/scan__allUi" android:background="@drawable/img_background_scan3" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="100.0">
+            <com.fiio.music.util.RoundProgressBar android:id="@id/scan_progress" android:background="@drawable/scan_progress_bg1" android:layout_width="122.66998dip" android:layout_height="122.66998dip" android:layout_centerInParent="true" android_custom:roundColor="#ff595959" android_custom:roundProgressColor="@color/c1f65e9" android_custom:roundWidth="2.0dip" android_custom:max="100" android_custom:textIsDisplayable="true" />
+            <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/white" android:id="@id/scan_text_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/margin_38" android:text="@string/scanning" android:layout_above="@id/scan_progress" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="@dimen/text_size_36" android:textColor="@color/white" android:id="@id/song_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/track_balance_text" android:layout_centerInParent="true" />
+            <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_10" android:text="@string/song_unit" android:layout_below="@id/song_count" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/scan__allUi2" android:background="@drawable/img_background_scan3" android:layout_width="fill_parent" android:layout_height="@dimen/height_98">
+            <Button android:textSize="@dimen/text_size_15" android:textColor="@color/white" android:id="@id/scan_ok" android:background="@drawable/button_background_blue" android:layout_width="126.66998dip" android:layout_height="36.0dip" android:layout_marginLeft="@dimen/margin_10" android:text="@string/ok" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

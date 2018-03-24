@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/parentPanel" android:background="#ffffffff" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/topPanel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="45.0dip">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/title_template" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="3.0dip">
+            <ImageView android:layout_gravity="top" android:id="@id/icon" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_margin="3.0dip" android:src="@drawable/ic_dialog" />
+            <com.android.internal.widget.DialogTitle android:ellipsize="end" android:id="@id/alertTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" style="@style/textAppearanceDialogWindowTitle" />
+        </LinearLayout>
+        <ImageView android:gravity="fill_horizontal" android:id="@id/titleDivider" android:background="@color/dialog_line" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:scaleType="fitXY" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/contentPanel" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_margin="5.0dip" android:layout_weight="1.0">
+        <ScrollView android:id="@id/scrollView" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/message" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/textAppearanceDialogWindowTitle" />
+        </ScrollView>
+    </LinearLayout>
+    <FrameLayout android:id="@id/customPanel" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <LinearLayout android:orientation="vertical" android:id="@id/buttonPanel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="50.0dip">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:paddingLeft="2.0dip" android:paddingTop="4.0dip" android:paddingRight="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:id="@id/leftSpacer" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.25" style="@style/btn_dialog" />
+            <Button android:layout_gravity="left" android:id="@id/button1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="2" android:layout_weight="1.0" style="@style/btn_dialog" />
+            <Button android:layout_gravity="center_horizontal" android:id="@id/button3" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="2" android:layout_weight="1.0" style="@style/btn_dialog" />
+            <Button android:layout_gravity="right" android:id="@id/button2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="2" android:layout_weight="1.0" style="@style/btn_dialog" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/rightSpacer" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.25" style="@style/btn_dialog" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

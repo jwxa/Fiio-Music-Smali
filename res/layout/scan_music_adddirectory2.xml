@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/cedecf1" android:fitsSystemWindows="false" android:clipToPadding="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/title" android:background="@color/ca5a5a5" android:layout_width="fill_parent" android:layout_height="@dimen/height_70">
+        <TextView android:textSize="15.0sp" android:textColor="@color/white" android:id="@id/title_revise" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_20" android:text="@string/scan_appoint" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/head_layout" android:background="@color/cedecf1" android:layout_width="fill_parent" android:layout_height="43.329987dip">
+        <View android:background="@color/c7f7f7f" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_alignParentBottom="true" />
+        <CheckBox android:id="@id/selectall" android:padding="10.0dip" android:layout_width="@dimen/back_button_size" android:layout_height="@dimen/back_button_size" android:layout_marginRight="@dimen/margin_20" android:button="@drawable/checkbox_selector1" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:textColor="@color/c7f7f7f" android:id="@id/selectall_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/select_all" android:layout_toLeftOf="@id/selectall" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/backicon" android:layout_width="@dimen/back_button_size" android:layout_height="@dimen/back_button_size" android:layout_marginLeft="@dimen/margin_18" android:src="@drawable/setting_back_selector2" android:scaleType="centerInside" android:layout_centerVertical="true" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/selectall_text" android:layout_toRightOf="@id/backicon" android:layout_centerVertical="true">
+            <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/c7f7f7f" android:id="@id/type_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_12" android:text="@string/file_dir_text" android:singleLine="true" />
+        </LinearLayout>
+    </RelativeLayout>
+    <ListView android:id="@id/lv_scan_music_list" android:focusable="true" android:scrollbars="none" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="10.0dip" android:drawSelectorOnTop="false" android:divider="@color/c7f7f7f" android:dividerHeight="0.5dip" android:layout_weight="5.0" style="@style/listview_style" />
+    <FrameLayout android:orientation="vertical" android:background="#8f00000f" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ListView android:layout_gravity="top" android:id="@id/lv_scan_music_list" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:cacheColorHint="@color/transparent" android:divider="#8f999999" android:dividerHeight="1.0dip" />
+    </FrameLayout>
+    <RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <Button android:textSize="@dimen/text_size_15" android:textColor="@color/commoncolor_white" android:gravity="center" android:id="@id/scan_start" android:background="@drawable/button_background_blue" android:layout_width="113.29999dip" android:layout_height="36.0dip" android:text="@string/finsh" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</LinearLayout>

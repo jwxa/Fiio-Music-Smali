@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="15.0sp" android:textColor="#ff494949" android:gravity="center" android:id="@id/tv_download_list_item_number" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/ibtn_download_list_item_menu" android:layout_toRightOf="@id/tv_download_list_item_number" android:layout_centerVertical="true">
+        <TextView android:textSize="15.0sp" android:textColor="#ff494949" android:id="@id/tv_download_list_item_top" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="3.0dip" android:lines="1" android:singleLine="true" />
+        <TextView android:textSize="12.0sp" android:textColor="#ff999999" android:id="@id/tv_download_list_item_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="3.0dip" android:lines="1" android:singleLine="true" />
+    </LinearLayout>
+    <Button android:id="@id/ibtn_download_list_item_menu" android:background="@drawable/btn_delete" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/nav_meun_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/frm_user_info" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="55.0dip">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_marginTop="12.0dip" android:layout_alignParentLeft="true">
+            <ImageView android:id="@id/setting_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_setting_src1" />
+            <View android:layout_width="6.0dip" android:layout_height="2.0dip" />
+            <TextView android:textSize="15.0sp" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_title" />
+        </LinearLayout>
+    </RelativeLayout>
+    <View style="@style/SlidingMenu.View.SplitLine" />
+    <ScrollView android:id="@id/setting_scroll_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/frm_user_info">
+        <LinearLayout android:orientation="vertical" android:id="@id/setting_srcoll_view_linearlayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+            <include layout="@layout/setting_menu_common_layout1" />
+            <include layout="@layout/setting_menu_play_layout1" />
+            <include layout="@layout/setting_menu_other_layout1" />
+            <View android:layout_width="fill_parent" android:layout_height="20.0dip" />
+            <LinearLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <Button android:id="@id/setting_exit_app_btn" android:background="@drawable/btn_setting_exit_bg_selector" android:layout_width="126.0dip" android:layout_height="36.0dip" android:text="@string/exit_title" />
+            </LinearLayout>
+            <View android:layout_width="fill_parent" android:layout_height="20.0dip" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

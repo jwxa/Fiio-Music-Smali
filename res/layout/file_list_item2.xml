@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/cedecf1" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_list_item_icon2" android:focusable="false" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:src="@drawable/btn_right_arrow_selector2" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <View android:id="@id/playlist_item_right" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginRight="18.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <CheckBox android:id="@id/playlist_item_checkbox" android:visibility="invisible" android:layout_marginRight="18.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/item_checkbox1" />
+    <ImageView android:id="@id/iv_list_item_icon_file" android:layout_width="42.0dip" android:layout_height="42.0dip" android:layout_marginLeft="@dimen/margin_12" android:src="@drawable/img_playlist_icon" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/curplay_file" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_12" android:layout_centerVertical="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/linearLayout" android:layout_width="300.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/pic_text_marginleft" android:layout_toLeftOf="@id/playlist_item_right" android:layout_toRightOf="@id/iv_list_item_icon_file" android:layout_centerVertical="true">
+        <com.fiio.music.widget.AlwaysMarqueeTextView android:textSize="@dimen/text_size_14" android:textColor="@color/c303030" android:gravity="bottom" android:id="@id/tv_list_item_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/main_song_name_text" android:singleLine="true" />
+        <com.fiio.music.widget.AlwaysMarqueeTextView android:textSize="@dimen/text_size_10" android:textColor="@color/text_color_7f7f7f" android:id="@id/tv_list_item_count" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/dialog_textitem_size" android:textColor="@color/light_blacktext" android:gravity="center" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="@dimen/dialog_title_height" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_centerHorizontal="true" />
+    <View android:id="@id/viewline" android:background="@color/diver_color" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="@dimen/dialog_line_margin_left" android:layout_marginRight="@dimen/dialog_line_margin_left" android:layout_below="@id/title" />
+    <LinearLayout android:orientation="vertical" android:id="@id/contentlayout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/viewline" />
+    <View android:id="@id/viewline2" android:background="@color/diver_color" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_below="@id/contentlayout" />
+    <LinearLayout android:gravity="center_horizontal" android:background="#fff0f0f0" android:layout_width="fill_parent" android:layout_height="40.0dip" android:divider="@color/dark_grey" android:layout_below="@id/viewline2">
+        <TextView android:textSize="@dimen/dialog_textitem_size" android:textColor="@color/light_blacktext" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/l_cancle" android:layout_width="0.0dip" android:layout_height="39.0dip" android:text="@string/cancle" android:layout_weight="1.0" />
+        <View android:background="@color/diver_color" android:layout_width="0.5dip" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/dialog_textitem_size" android:textColor="@color/light_blacktext" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/l_ok" android:layout_width="0.0dip" android:layout_height="39.0dip" android:text="@string/ok" android:layout_weight="1.0" />
+    </LinearLayout>
+</RelativeLayout>
