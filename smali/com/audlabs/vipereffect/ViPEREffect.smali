@@ -502,20 +502,23 @@
 .end method
 
 .method public static setViPEREffect([B[B)V
-    .locals 5
+    .locals 7
 
     .prologue
     .line 376
     sget-object v1, Lcom/audlabs/vipereffect/ViPEREffect;->configObj:Ljava/lang/Object;
 
     monitor-enter v1
-    
-    const-string v2, "jwxa"
-    invoke-static {v2, v1}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 377
     :try_start_0
     sget-object v0, Lcom/audlabs/vipereffect/ViPEREffect;->configs:Ljava/util/Vector;
+
+    const-string v5, "jwxa"
+
+    const-string v6, "setViPEREffect"
+
+    invoke-static {v5, v6}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
     const/4 v2, 0x4
 
@@ -653,7 +656,7 @@
 .end method
 
 .method public static setViPERFormat(III)Z
-    .locals 4
+    .locals 5
 
     .prologue
     .line 363
@@ -720,6 +723,9 @@
     const-string v0, "0\n"
 
     sget-object v1, Lcom/audlabs/vipereffect/ViPEREffect;->formatresult:Ljava/lang/String;
+
+    const-string v4, "jwxa"
+    invoke-static {v4, v1}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -894,7 +900,7 @@
 .end method
 
 .method public static setViPERProcess([BI)[B
-    .locals 2
+    .locals 7
 
     .prologue
     .line 348
@@ -904,9 +910,14 @@
 
     .line 349
     :try_start_0
+    #将传入的pcm原始块byte[] 赋值到pcms
     sput-object p0, Lcom/audlabs/vipereffect/ViPEREffect;->pcms:[B
 
+    const-string v5, "jwxa"
+    const-string v6, "after setViPERProcess put pcms"
+    invoke-static {v5, v6}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
     .line 350
+    #pcm块长度赋值到pcmLegth
     sput p1, Lcom/audlabs/vipereffect/ViPEREffect;->pcmLegth:I
 
     .line 351
@@ -930,11 +941,11 @@
     .line 359
     :goto_0
     sget-object v0, Lcom/audlabs/vipereffect/ViPEREffect;->queue:Ljava/util/Queue;
-
+    #从队列中拿出byte[] queue poll() 赋值给 v0
     invoke-interface {v0}, Ljava/util/Queue;->poll()Ljava/lang/Object;
 
     move-result-object v0
-
+    #类型转换 byte[]
     check-cast v0, [B
 
     return-object v0

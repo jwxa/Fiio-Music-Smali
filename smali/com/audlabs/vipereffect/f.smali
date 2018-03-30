@@ -28,7 +28,7 @@
 
 # virtual methods
 .method public final run()V
-    .locals 7
+    .locals 9
 
     .prologue
     const/4 v2, 0x0
@@ -45,13 +45,15 @@
     .line 251
     :cond_0
     :goto_0
+    #isRun 判断是否正在运行
     invoke-static {}, Lcom/audlabs/vipereffect/ViPEREffect;->access$0()Z
 
     move-result v1
-
+    #不在运行直接return
     if-eqz v1, :cond_3
 
     .line 252
+    #获取127.0.0.1:8083的InputStream e.smali
     iget-object v1, p0, Lcom/audlabs/vipereffect/f;->b:Ljava/io/InputStream;
 
     invoke-virtual {v1, v3}, Ljava/io/InputStream;->read([B)I
@@ -66,18 +68,20 @@
     if-nez v0, :cond_1
 
     .line 259
+    #get pcmSendLegth pcm块的长度？
     invoke-static {}, Lcom/audlabs/vipereffect/ViPEREffect;->access$8()I
 
     move-result v0
-
+    #新建一个数组 长度为pcmSendLegth
     new-array v0, v0, [B
-
+    #set backPcms pcm块byte[] 
     invoke-static {v0}, Lcom/audlabs/vipereffect/ViPEREffect;->access$9([B)V
 
     move v0, v1
 
     .line 264
     :goto_1
+    #get pcmSendLegth
     invoke-static {}, Lcom/audlabs/vipereffect/ViPEREffect;->access$8()I
 
     move-result v4
@@ -86,7 +90,7 @@
 
     .line 265
     const/4 v4, 0x0
-
+    #get backPcms pcm块byte[]
     invoke-static {}, Lcom/audlabs/vipereffect/ViPEREffect;->access$10()[B
 
     move-result-object v5
@@ -96,17 +100,19 @@
     invoke-static {v3, v4, v5, v0, v1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     .line 267
+    #get queue 先进先出byte[]队列
     invoke-static {}, Lcom/audlabs/vipereffect/ViPEREffect;->access$11()Ljava/util/Queue;
 
     move-result-object v0
-
+    #get backPcms
     invoke-static {}, Lcom/audlabs/vipereffect/ViPEREffect;->access$10()[B
 
     move-result-object v1
-
+    #queue offer 放入队列中
     invoke-interface {v0, v1}, Ljava/util/Queue;->offer(Ljava/lang/Object;)Z
 
     .line 268
+    #信号量
     invoke-static {}, Lcom/audlabs/vipereffect/ViPEREffect;->access$12()Ljava/util/concurrent/Semaphore;
 
     move-result-object v0
