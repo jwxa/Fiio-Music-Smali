@@ -95,6 +95,7 @@
 
     move-result-object v5
 
+#把v0-v1放到v0的位置 v0:pcmSendLegth v1读到inputStream的长度
     sub-int/2addr v0, v1
 
     invoke-static {v3, v4, v5, v0, v1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V

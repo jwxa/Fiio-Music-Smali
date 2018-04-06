@@ -47,12 +47,12 @@
 
     .line 241
     invoke-virtual {v2}, Ljava/net/Socket;->getOutputStream()Ljava/io/OutputStream;
-
+#OutputStream 输出流 v1
     move-result-object v1
 
     .line 242
     invoke-virtual {v2}, Ljava/net/Socket;->getInputStream()Ljava/io/InputStream;
-
+#InputStream 输入流 v0
     move-result-object v0
 
     .line 244
@@ -65,6 +65,7 @@
 
     .line 284
     :goto_0
+    #isRun
     invoke-static {}, Lcom/audlabs/vipereffect/ViPEREffect;->access$0()Z
 
     move-result v0
@@ -72,6 +73,7 @@
     if-eqz v0, :cond_5
 
     .line 285
+    #get pcmsObj v3
     invoke-static {}, Lcom/audlabs/vipereffect/ViPEREffect;->access$13()Ljava/lang/Object;
 
     move-result-object v3
@@ -83,6 +85,7 @@
 
     .line 289
     :try_start_2
+    #get pcmLegth v0
     invoke-static {}, Lcom/audlabs/vipereffect/ViPEREffect;->access$14()I
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
@@ -93,6 +96,7 @@
 
     .line 291
     :try_start_3
+    #pcmsObj wait
     invoke-static {}, Lcom/audlabs/vipereffect/ViPEREffect;->access$13()Ljava/lang/Object;
 
     move-result-object v0
@@ -106,23 +110,25 @@
     :cond_0
     :goto_1
     :try_start_4
+    #get pcmLegth v0
     invoke-static {}, Lcom/audlabs/vipereffect/ViPEREffect;->access$14()I
 
     move-result v0
-
+    #put pcmSendLegth
     invoke-static {v0}, Lcom/audlabs/vipereffect/ViPEREffect;->access$15(I)V
 
     .line 298
+    #get pcms v0 
     invoke-static {}, Lcom/audlabs/vipereffect/ViPEREffect;->access$16()[B
 
     move-result-object v0
 
     const/4 v4, 0x0
-
+    #get pcmLegth v4
     invoke-static {}, Lcom/audlabs/vipereffect/ViPEREffect;->access$14()I
 
     move-result v5
-
+    #写入pcms,0,pcmLegth
     invoke-virtual {v1, v0, v4, v5}, Ljava/io/OutputStream;->write([BII)V
 
     .line 299
@@ -130,7 +136,7 @@
 
     .line 300
     const/4 v0, 0x0
-
+    #put pcmLegth
     invoke-static {v0}, Lcom/audlabs/vipereffect/ViPEREffect;->access$17(I)V
 
     .line 288

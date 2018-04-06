@@ -71,6 +71,7 @@
 
     if-eqz v0, :cond_6
 
+    #get forObj
     .line 190
     invoke-static {}, Lcom/audlabs/vipereffect/ViPEREffect;->access$5()Ljava/lang/Object;
 
@@ -83,6 +84,7 @@
 
     .line 194
     :try_start_2
+    #get formats
     invoke-static {}, Lcom/audlabs/vipereffect/ViPEREffect;->access$6()[B
 
     move-result-object v0
@@ -102,6 +104,7 @@
     .line 196
     :cond_0
     :try_start_3
+    #get forObj
     invoke-static {}, Lcom/audlabs/vipereffect/ViPEREffect;->access$5()Ljava/lang/Object;
 
     move-result-object v0
@@ -115,6 +118,7 @@
     :cond_1
     :goto_1
     :try_start_4
+    #get formats
     invoke-static {}, Lcom/audlabs/vipereffect/ViPEREffect;->access$6()[B
 
     move-result-object v0

@@ -59,6 +59,7 @@
     if-eqz v0, :cond_5
 
     .line 102
+    #get configObj
     invoke-static {}, Lcom/audlabs/vipereffect/ViPEREffect;->access$1()Ljava/lang/Object;
 
     move-result-object v3
@@ -70,6 +71,7 @@
 
     .line 106
     :try_start_2
+    #get config
     invoke-static {}, Lcom/audlabs/vipereffect/ViPEREffect;->access$2()Ljava/util/Vector;
 
     move-result-object v0
@@ -79,11 +81,12 @@
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
     move-result v0
-
+    #如果size不等于0则跳转到cond_0
     if-nez v0, :cond_0
 
     .line 108
     :try_start_3
+    #get configObj
     invoke-static {}, Lcom/audlabs/vipereffect/ViPEREffect;->access$1()Ljava/lang/Object;
 
     move-result-object v0
@@ -97,6 +100,7 @@
     :cond_0
     :goto_1
     :try_start_4
+    #get config
     invoke-static {}, Lcom/audlabs/vipereffect/ViPEREffect;->access$2()Ljava/util/Vector;
 
     move-result-object v0

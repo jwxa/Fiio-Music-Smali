@@ -835,6 +835,7 @@
     .line 377
     iget v2, p0, Lcom/example/root/checkappmusic/FiioMediaPlayer;->mOrgTrackChannel:I
 
+    #如果通道数为1 单声道转双声道
     if-eq v2, v0, :cond_2
 
     .line 378
@@ -854,20 +855,21 @@
     :goto_0
     iget-boolean v2, p0, Lcom/example/root/checkappmusic/FiioMediaPlayer;->flag_viper:Z
 
+    #如果flag_viper等于0 则:cond_1  直接返回
     if-eqz v2, :cond_1
 
     iget-object v2, p0, Lcom/example/root/checkappmusic/FiioMediaPlayer;->PcmBuffer0:[B
-
+    #PcmBuffer0为空
     if-eqz v2, :cond_1
 
     iget-object v2, p0, Lcom/example/root/checkappmusic/FiioMediaPlayer;->PcmBuffer0:[B
 
     array-length v2, v2
-
+    #PcmBuffer0长度为0
     if-eqz v2, :cond_1
 
     iget-boolean v2, p0, Lcom/example/root/checkappmusic/FiioMediaPlayer;->smpViperSupport:Z
-
+    #smpViperSupport不支持viper
     if-eqz v2, :cond_1
 
     .line 394
@@ -3639,6 +3641,9 @@
     iget v1, p0, Lcom/example/root/checkappmusic/FiioMediaPlayer;->audioDataFormat:I
 
     iget v4, p0, Lcom/example/root/checkappmusic/FiioMediaPlayer;->mTracnChannel:I
+
+
+    
 
     invoke-virtual {p0, v0, v1, v4}, Lcom/example/root/checkappmusic/FiioMediaPlayer;->audioCreate(III)Z
 

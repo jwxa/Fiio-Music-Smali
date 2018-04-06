@@ -594,25 +594,25 @@
     sget-object v3, Lcom/audlabs/vipereffect/ViPEREffect;->configs:Ljava/util/Vector;
 
     const/4 v4, 0x2
-
+    #byte[][] v4 = new byte[2][]
     new-array v4, v4, [[B
 
     const/4 v5, 0x0
 
     const/4 v6, 0x1
-
+    #v6 = new byte[1]
     new-array v6, v6, [B
 
     const/4 v7, 0x0
 
     const/4 v8, 0x1
-
+    #把v8放入v6的第v7位   v6[0] = 1
     aput-byte v8, v6, v7
-
+    #v4[0] = v6
     aput-object v6, v4, v5
 
     const/4 v5, 0x1
-
+    #等于0 则 v1赋值给v0寄存器 
     if-eqz p0, :cond_0
 
     :goto_0
@@ -656,7 +656,7 @@
 .end method
 
 .method public static setViPERFormat(III)Z
-    .locals 5
+    .locals 9
 
     .prologue
     .line 363
